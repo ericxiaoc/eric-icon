@@ -1,0 +1,787 @@
+--------- beginning of radio
+11-18 16:46:53.300 D/RILD    (  361): **RIL Daemon Started**
+11-18 16:46:53.301 D/RILD    (  361): **RILd param count=3**
+11-18 16:46:53.361 W/RILD    (  361): RIL_SAP_Init not defined or exported in /vendor/lib64/libreference-ril-ec200a.so: undefined symbol: RIL_SAP_Init
+11-18 16:46:53.361 D/RILD    (  361): RIL_Init argc = 4 clientId = 0
+11-18 16:46:53.371 I/RLOG-RIL(  361): Opening tty device -c
+11-18 16:46:53.371 I/RLOG-RIL(  361): Longsung reference build time: 20241113-1017
+11-18 16:46:55.533 D/TelephonyManager(  260): /proc/cmdline=storagemedia=emmc androidboot.storagemedia=emmc androidboot.mode=normal  androidboot.dtb_idx=0 androidboot.dtbo_idx=0  androidboot.verifiedbootstate=orange androidboot.serialno=f4b9a37a1aabf412 console=ttyFIQ0 androidboot.baseband=N/A androidboot.wificountrycode=CN androidboot.veritymode=enforcing androidboot.hardware=rk30board androidboot.console=ttyFIQ0 androidboot.verifiedbootstate=orange firmware_class.path=/vendor/etc/firmware init=/init rootwait ro loop.max_part=7 androidboot.selinux=permissive buildvariant=userdebug rw earlycon=uart8250,mmio32,0xfe660000 root=PARTUUID=614e0000-0000 androidboot.boot_devices=fe310000.sdhci,fe330000.nandc
+11-18 16:47:00.363 D/TelephonyManager(  267): /proc/cmdline=storagemedia=emmc androidboot.storagemedia=emmc androidboot.mode=normal  androidboot.dtb_idx=0 androidboot.dtbo_idx=0  androidboot.verifiedbootstate=orange androidboot.serialno=f4b9a37a1aabf412 console=ttyFIQ0 androidboot.baseband=N/A androidboot.wificountrycode=CN androidboot.veritymode=enforcing androidboot.hardware=rk30board androidboot.console=ttyFIQ0 androidboot.verifiedbootstate=orange firmware_class.path=/vendor/etc/firmware init=/init rootwait ro loop.max_part=7 androidboot.selinux=permissive buildvariant=userdebug rw earlycon=uart8250,mmio32,0xfe660000 root=PARTUUID=614e0000-0000 androidboot.boot_devices=fe310000.sdhci,fe330000.nandc
+11-18 16:47:00.463 D/RLOG-RIL(  361): pre-ports:	-c:	auto
+11-18 16:47:00.463 D/RLOG-RIL(  361):  get_usb_device_path:/sys/bus/usb/devices/6-1,modem_type=10,check_times=50
+11-18 16:47:00.480 D/RLOG-RIL(  361): at_path:/sys/bus/usb/devices/6-1:1.7
+11-18 16:47:00.480 D/RLOG-RIL(  361): modem_path:/sys/bus/usb/devices/6-1:1.8
+11-18 16:47:00.480 D/RLOG-RIL(  361): cur-ports:/dev/ttyUSB4:/dev/ttyUSB5
+11-18 16:47:00.480 I/RLOG-RIL(  361): AT interface:/dev/ttyUSB4 Modem interface:/dev/ttyUSB5
+11-18 16:47:00.480 I/RLOG-RIL(  361): Gobinet interface=usb0
+11-18 16:47:00.481 I/RLOG-RIL(  361): g_dial_mode=:0,g_netwrok_interface=ppp0
+11-18 16:47:00.481 D/RILD    (  361): RIL_Init rilInit completed
+11-18 16:47:00.481 I/RILC    (  361): SIM_COUNT: 1
+11-18 16:47:00.481 E/RILC    (  361): RIL_register: RIL version 12
+11-18 16:47:00.481 I/RILC    (  361): s_registerCalled flag set, 1
+11-18 16:47:00.481 I/RLOG-RIL(  361): mainLoop begin
+11-18 16:47:00.481 I/RLOG-RIL(  361): open AT port:/dev/ttyUSB4 begin
+11-18 16:47:00.481 D/RILC    (  361): registerService: starting android::hardware::radio::V1_1::IRadio slot1
+11-18 16:47:00.482 I/RLOG-RIL(  361): open AT port end
+11-18 16:47:00.482 E/RLOG-RIL(  361): at_open ret=0
+11-18 16:47:00.485 I/RILC    (  361): RILHIDL called registerService
+11-18 16:47:00.485 D/RILD    (  361): RIL_Init RIL_register completed
+11-18 16:47:00.485 D/RILD    (  361): RIL_register_socket completed
+11-18 16:47:01.482 I/RLOG-RIL(  361): initializeCallback begin
+11-18 16:47:01.482 D/RLOG-RIL(  361): AT> ATE0
+11-18 16:47:01.545 D/TelephonyRegistry(  469): listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+11-18 16:47:01.652 D/TelephonyRegistry(  469): listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+11-18 16:47:01.681 D/TelephonyRegistry(  469): listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+11-18 16:47:01.803 D/TelephonyRegistry(  469): systemRunning register for intents
+11-18 16:47:02.013 D/TelephonyRegistry(  469): listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+11-18 16:47:02.258 D/TelephonyRegistry(  469): listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+11-18 16:47:03.015 D/TelephonyComponentFactory(  889): validated paths: null
+11-18 16:47:03.015 D/TelephonyComponentFactory(  889): Total components injected: 0
+11-18 16:47:03.016 D/TDC     (  889): updateOrInsert: inserting: Modem { uuid=modem, state=0, rilModel=0, rat={}, maxActiveVoiceCall=1, maxActiveDataCall=1, maxStandby=1 }
+11-18 16:47:03.016 D/TDC     (  889): updateOrInsert: inserting: Sim { uuid=sim, modemUuid=modem, state=0 }
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): cannot load/parse PersistAtoms
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): java.nio.file.NoSuchFileException: /data/user_de/0/com.android.phone/files/persist_atoms.pb
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): 	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214)
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): 	at java.nio.file.Files.newByteChannel(Files.java:361)
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): 	at java.nio.file.Files.newByteChannel(Files.java:407)
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): 	at java.nio.file.Files.readAllBytes(Files.java:3152)
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): 	at com.android.internal.telephony.metrics.PersistAtomsStorage.loadAtomsFromFile(PersistAtomsStorage.java:132)
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): 	at com.android.internal.telephony.metrics.PersistAtomsStorage.<init>(PersistAtomsStorage.java:60)
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): 	at com.android.internal.telephony.metrics.MetricsCollector.<init>(MetricsCollector.java:88)
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): 	at com.android.internal.telephony.PhoneFactory.makeDefaultPhone(PhoneFactory.java:149)
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): 	at com.android.internal.telephony.PhoneFactory.makeDefaultPhones(PhoneFactory.java:105)
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): 	at com.android.phone.PhoneGlobals.onCreate(PhoneGlobals.java:346)
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): 	at com.android.phone.PhoneApp.onCreate(PhoneApp.java:39)
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1192)
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6719)
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): 	at android.app.ActivityThread.access$1300(ActivityThread.java:237)
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1913)
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): 	at android.os.Looper.loop(Looper.java:223)
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): 	at android.app.ActivityThread.main(ActivityThread.java:7664)
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): 	at java.lang.reflect.Method.invoke(Native Method)
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+11-18 16:47:03.037 E/PersistAtomsStorage(  889): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+11-18 16:47:03.038 D/PersistAtomsStorage(  889): created new PersistAtoms
+11-18 16:47:03.047 D/MetricsCollector(  889): registered
+11-18 16:47:03.072 D/CdmaSSM (  889): subscriptionSource from settings: 0
+11-18 16:47:03.073 I/PhoneFactory(  889): Cdma Subscription set to 0
+11-18 16:47:03.073 I/PhoneFactory(  889): Network Mode set to 9
+11-18 16:47:03.074 D/RILJ    (  889): RIL: init preferredNetworkType=9 cdmaSubscription=0) [PHONEnull]
+11-18 16:47:03.099 D/RILC    (  361): setResponseFunctions
+11-18 16:47:03.106 D/RILC    (  361): rilConnectedInd
+11-18 16:47:03.106 D/RILC    (  361): radioStateChangedInd: radioState 1
+11-18 16:47:03.106 I/RILC    (  361): RIL Daemon version: Longsung reference ver 2024-1113-1009-android10->LTE
+11-18 16:47:03.110 D/RILJ    (  889): [UNSL]< UNSOL_RIL_CONNECTED [PHONE0]
+11-18 16:47:03.115 D/RILJ    (  889): [0000]> GET_HARDWARE_CONFIG [PHONE0]
+11-18 16:47:03.115 D/RLOG-RIL(  361): onRequest(124): GET_HARDWARE_CONFIG
+11-18 16:47:03.120 D/RILJ    (  889): Radio HAL version: 1.1 [PHONE0]
+11-18 16:47:03.120 D/RILJ    (  889): [0001]> RADIO_POWER on = true forEmergencyCall= false preferredForEmergencyCall=false [PHONE0]
+11-18 16:47:03.120 D/UiccController(  889): Creating UiccController
+11-18 16:47:03.121 D/RILC    (  361): setRadioPower: serial 1 on 1
+11-18 16:47:03.121 D/RLOG-RIL(  361): onRequest(23): RADIO_POWER
+11-18 16:47:03.121 D/RILC    (  361): setRadioPowerResponse: serial 1
+11-18 16:47:03.123 D/RILJ    (  889): [0002]> RIL_REQUEST_CDMA_SET_SUBSCRIPTION_SOURCE cdmaSubscription = 0 [PHONE0]
+11-18 16:47:03.124 D/RILJ    (  889): [0000]< GET_HARDWARE_CONFIG error 1 [PHONE0]
+11-18 16:47:03.124 D/RilRequest(  889): [0000]< GET_HARDWARE_CONFIG error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret= 
+11-18 16:47:03.125 D/UiccController(  889): config_num_physical_slots = 1
+11-18 16:47:03.125 D/RILJ    (  889): [UNSL]< UNSOL_RESPONSE_RADIO_STATE_CHANGED radioStateChanged: 2 [PHONE0]
+11-18 16:47:03.125 D/RILJ    (  889): [0001]< RADIO_POWER error 1 [PHONE0]
+11-18 16:47:03.126 D/RLOG-RIL(  361): onRequest(77): CDMA_SET_SUBSCRIPTION_SOURCE
+11-18 16:47:03.126 D/RilRequest(  889): [0001]< RADIO_POWER error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+11-18 16:47:03.127 D/RILJ    (  889): [0002]< RIL_REQUEST_CDMA_SET_SUBSCRIPTION_SOURCE error 1 [PHONE0]
+11-18 16:47:03.127 D/RilRequest(  889): [0002]< RIL_REQUEST_CDMA_SET_SUBSCRIPTION_SOURCE error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+11-18 16:47:03.166 I/PhoneFactory(  889): Creating SubscriptionController
+11-18 16:47:03.219 D/SubscriptionController(  889): [SubscriptionController] init by Context
+11-18 16:47:03.237 I/PhoneFactory(  889): Creating Phone with type = 1 phoneId = 0
+11-18 16:47:03.238 D/TelephonyTester(  889): register for intent action=com.android.internal.telephony.action_detached
+11-18 16:47:03.238 D/TelephonyTester(  889): register for intent action=com.android.internal.telephony.action_attached
+11-18 16:47:03.238 D/TelephonyTester(  889): register for intent action=com.android.internal.telephony.TestServiceState
+11-18 16:47:03.238 D/TelephonyTester(  889): register for intent action=com.android.internal.telephony.TestChangeNumber
+11-18 16:47:03.259 D/Phone   (  889): mDoesRilSendMultipleCallRing=true
+11-18 16:47:03.260 D/Phone   (  889): mCallRingDelay=3000
+11-18 16:47:03.305 D/RILJ    (  889): [0003]> RIL_REQUEST_START_LCE reportIntervalMs = 200 pullMode = true [PHONE0]
+11-18 16:47:03.307 D/RLOG-RIL(  361): onRequest(132): START_LCE
+11-18 16:47:03.307 E/RILC    (  361): Invalid response: NULL
+11-18 16:47:03.308 D/RILJ    (  889): [0003]< RIL_REQUEST_START_LCE error 1 [PHONE0]
+11-18 16:47:03.308 D/RilRequest(  889): [0003]< RIL_REQUEST_START_LCE error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=[0, 0]
+11-18 16:47:03.313 D/SmsDispatchersController(  889): SmsDispatchersController created
+11-18 16:47:03.327 E/ImsSmsDispatcher [0](  889): Failed to get sms format. Error: getSmsFormat()
+11-18 16:47:03.327 D/SMSDispatcher(  889): SMSDispatcher: ctor mSmsCapable=false format=unknown mSmsSendDisabled=true
+11-18 16:47:03.327 W/FeatureConnector(  889): [ImsSmsDispatcher, 0] connect: not supported.
+11-18 16:47:03.338 D/SMSDispatcher(  889): SMSDispatcher: ctor mSmsCapable=false format=3gpp2 mSmsSendDisabled=true
+11-18 16:47:03.338 D/CdmaSMSDispatcher(  889): CdmaSMSDispatcher created
+11-18 16:47:03.348 D/GsmInboundSmsHandler(  889): created InboundSmsHandler
+11-18 16:47:03.366 D/GsmInboundSmsHandler(  889): StartupState.enter: entering StartupState
+11-18 16:47:03.375 D/CdmaInboundSmsHandler(  889): created InboundSmsHandler
+11-18 16:47:03.384 D/CdmaInboundSmsHandler(  889): StartupState.enter: entering StartupState
+11-18 16:47:03.385 D/SMSDispatcher(  889): SMSDispatcher: ctor mSmsCapable=false format=3gpp mSmsSendDisabled=true
+11-18 16:47:03.385 D/GsmSMSDispatcher(  889): GsmSMSDispatcher created
+11-18 16:47:03.387 D/GsmInboundSmsHandler(  889): StartupState.processMessage: processing EVENT_START_ACCEPTING_SMS
+11-18 16:47:03.387 D/GsmInboundSmsHandler(  889): IdleState.enter: entering IdleState
+11-18 16:47:03.387 D/GsmInboundSmsHandler(  889): IdleState.processMessage: processing EVENT_RELEASE_WAKELOCK
+11-18 16:47:03.388 D/CdmaInboundSmsHandler(  889): StartupState.processMessage: processing EVENT_START_ACCEPTING_SMS
+11-18 16:47:03.388 D/CdmaInboundSmsHandler(  889): IdleState.enter: entering IdleState
+11-18 16:47:03.388 D/CdmaInboundSmsHandler(  889): IdleState.processMessage: processing EVENT_RELEASE_WAKELOCK
+11-18 16:47:03.389 D/GsmInboundSmsHandler(  889): IdleState.processMessage: EVENT_RELEASE_WAKELOCK: mWakeLock released
+11-18 16:47:03.390 D/CdmaInboundSmsHandler(  889): IdleState.processMessage: EVENT_RELEASE_WAKELOCK: mWakeLock released
+11-18 16:47:03.392 D/CdmaSSM (  889): subscriptionSource from settings: 0
+11-18 16:47:03.392 D/CdmaSSM (  889): cdmaSSM constructor: 0
+11-18 16:47:03.395 D/GsmCdmaPhone(  889): [0] Precise phone type 1
+11-18 16:47:03.395 D/RILJ    (  889): setPhoneType=1 old value=0 [PHONE0]
+11-18 16:47:03.410 D/CarrierActionAgent(  889): [0]Creating CarrierActionAgent
+11-18 16:47:03.414 W/CarrierConfigManager(  889): Error getting config for subId -1 ICarrierConfigLoader is null
+11-18 16:47:03.435 D/TransportManager(  889): operates in legacy mode.
+11-18 16:47:03.447 W/CarrierConfigManager(  889): Error getting config for subId -1 ICarrierConfigLoader is null
+11-18 16:47:03.448 D/TelephonyRegistry(  469): listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+11-18 16:47:03.451 D/NRM-C-0 (  889): registerForNetworkRegistrationInfoChanged
+11-18 16:47:03.459 D/NewNitzStateMachineImpl(  889): handleNetworkUnavailable(): mLatestNitzSignal was already null. Nothing to do.
+11-18 16:47:03.472 D/TelephonyRegistry(  469): notifyCellLocationForSubscriber: subId=0 cellLocation=null
+11-18 16:47:03.474 D/RILJ    (  889): [0004]> SIGNAL_STRENGTH [PHONE0]
+11-18 16:47:03.474 D/RLOG-RIL(  361): onRequest(19): SIGNAL_STRENGTH
+11-18 16:47:03.475 D/SST     (  889): [0] notifyVoiceRegStateRilRadioTechnologyChanged: vrs=1 rat=0
+11-18 16:47:03.477 D/RILJ    (  889): [0004]< SIGNAL_STRENGTH SignalStrength:{mCdma=CellSignalStrengthCdma: cdmaDbm=-75 cdmaEcio=2147483647 evdoDbm=-75 evdoEcio=2147483647 evdoSnr=2147483647 level=0,mGsm=CellSignalStrengthGsm: rssi=-51 ber=0 mTa=2147483647 mLevel=4,mWcdma=CellSignalStrengthWcdma: ss=2147483647 ber=2147483647 rscp=2147483647 ecno=2147483647 level=0,mTdscdma=CellSignalStrengthTdscdma: rssi=2147483647 ber=2147483647 rscp=2147483647 level=0,mLte=CellSignalStrengthLte: rssi=-51 rsrp=-51 rsrq=2147483647 rssnr=2147483647 cqi=2147483647 ta=0 level=4 parametersUseForLevel=1,mNr=CellSignalStrengthNr:{ csiRsrp = 2147483647 csiRsrq = 2147483647 csiSinr = 2147483647 ssRsrp = 2147483647 ssRsrq = 2147483647 ssSinr = 2147483647 level = 0 parametersUseForLevel = 1 },primary=CellSignalStrengthLte} [PHONE0]
+11-18 16:47:03.478 D/TelephonyRegistry(  469): listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+11-18 16:47:03.479 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=0 subList=[] subInfo=null
+11-18 16:47:03.481 W/CarrierConfigManager(  889): Error getting config for subId -1 ICarrierConfigLoader is null
+11-18 16:47:03.503 D/EmergencyNumberTracker(  889):  asset emergency database is loaded. Ver: 1 Phone Id: 0
+11-18 16:47:03.525 E/EmergencyNumberTracker(  889): Cache ota emergency database IOException: java.io.FileNotFoundException: /data/misc/emergencynumberdb/emergency_number_db: open failed: ENOENT (No such file or directory)
+11-18 16:47:03.525 D/EmergencyNumberTracker(  889): Using Asset Emergency database. Version: 1
+11-18 16:47:03.526 D/TelephonyRegistry(  469): listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+11-18 16:47:03.550 D/SubscriptionController(  889): Valid row not present in db
+11-18 16:47:03.551 D/SubscriptionController(  889): getSubscriptionProperty Query value = null
+11-18 16:47:03.555 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:03.576 D/m.android.phon(  889): DCT.constructor
+11-18 16:47:03.590 D/Dcc-C-0 (  889): E ctor
+11-18 16:47:03.590 D/Dcc-C-0 (  889): X ctor
+11-18 16:47:03.590 D/DcTesterDeacativateAll(  889): register for intent action=com.android.internal.telephony.dataconnection.action_deactivate_all
+11-18 16:47:03.590 D/DcTesterDeacativateAll(  889): register for intent action=com.android.internal.telephony.action_detached
+11-18 16:47:03.596 D/DcTesterFailBrinupAll(  889): register for intent action=com.android.internal.telephony.dataconnection.action_fail_bringup
+11-18 16:47:03.596 D/DcTesterFailBrinupAll(  889): register for intent action=com.android.internal.telephony.action_detached
+11-18 16:47:03.596 D/DcTesterFailBrinupAll(  889): register for intent action=com.android.internal.telephony.action_attached
+11-18 16:47:03.600 W/CarrierConfigManager(  889): Error getting config for subId -1 ICarrierConfigLoader is null
+11-18 16:47:03.600 D/DCT-C-0 (  889): initApnContexts: E
+11-18 16:47:03.601 W/ApnConfigTypeRepository(  889): carrier config is null
+11-18 16:47:03.602 D/DCT-C-0 (  889): initApnContexts: apnContext=hipri
+11-18 16:47:03.603 D/Dcc-C-0 (  889): DccDefaultState: msg.what=EVENT_RIL_CONNECTED mRilVersion=15
+11-18 16:47:03.603 D/DCT-C-0 (  889): initApnContexts: apnContext=fota
+11-18 16:47:03.603 D/DCT-C-0 (  889): initApnContexts: apnContext=ims
+11-18 16:47:03.603 D/DCT-C-0 (  889): initApnContexts: apnContext=cbs
+11-18 16:47:03.603 D/DCT-C-0 (  889): initApnContexts: apnContext=ia
+11-18 16:47:03.603 D/DCT-C-0 (  889): initApnContexts: apnContext=emergency
+11-18 16:47:03.604 D/DCT-C-0 (  889): initApnContexts: apnContext=mcx
+11-18 16:47:03.604 D/DCT-C-0 (  889): initApnContexts: apnContext=xcap
+11-18 16:47:03.604 D/DCT-C-0 (  889): initApnContexts: apnContext=default
+11-18 16:47:03.604 D/DCT-C-0 (  889): initApnContexts: apnContext=mms
+11-18 16:47:03.604 D/DCT-C-0 (  889): initApnContexts: apnContext=supl
+11-18 16:47:03.604 D/DCT-C-0 (  889): initApnContexts: apnContext=dun
+11-18 16:47:03.628 D/DCT-C-0 (  889): Adding emergency APN : [ApnSettingV7] Emergency, 0, null, sos, null, null, null, null, null, 0, emergency, IPV4V6, IPV4V6, false, 0, false, 0, 0, 0, 0, null, null, false, 135168, -1, -1, -1
+11-18 16:47:03.633 D/CarrierResolver(  889): Creating CarrierResolver[0]
+11-18 16:47:03.644 D/SST     (  889): [0] notifyVoiceRegStateRilRadioTechnologyChanged: vrs=1 rat=0
+11-18 16:47:03.651 I/GsmCdmaPhone(  889): [0] updateTtyMode ttyMode=0
+11-18 16:47:03.655 D/RILJ    (  889): [0005]> RIL_REQUEST_SET_TTY_MODE ttyMode = 0 [PHONE0]
+11-18 16:47:03.656 D/RLOG-RIL(  361): onRequest(80): SET_TTY_MODE
+11-18 16:47:03.656 D/RILJ    (  889): [0005]< RIL_REQUEST_SET_TTY_MODE error 1 [PHONE0]
+11-18 16:47:03.657 D/RilRequest(  889): [0005]< RIL_REQUEST_SET_TTY_MODE error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+11-18 16:47:03.658 I/GsmCdmaPhone(  889): [0] updateUiTtyMode ttyMode=0
+11-18 16:47:03.658 D/CallManager(  889): registerPhone(GSM Handler (com.android.internal.telephony.GsmCdmaPhone) {3058041})
+11-18 16:47:03.659 D/GsmCdmaPhone(  889): [0] GsmCdmaPhone: constructor: sub = 0
+11-18 16:47:03.661 I/PhoneFactory(  889): defaultSmsApplication: NONE
+11-18 16:47:03.668 I/PhoneFactory(  889): Creating SubInfoRecordUpdater 
+11-18 16:47:03.673 D/SubscriptionInfoUpdater(  889): Constructor invoked
+11-18 16:47:03.692 I/PhoneFactory(  889): IMS is not supported on this device, skipping ImsResolver.
+11-18 16:47:03.695 D/TelephonyRegistry(  469): listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+11-18 16:47:03.699 D/PhoneSwitcher(  889): PhoneSwitcher started
+11-18 16:47:03.701 D/ProxyController(  889): Constructor - Enter
+11-18 16:47:03.706 D/ProxyController(  889): clearTransaction
+11-18 16:47:03.706 D/ProxyController(  889): clearTransaction: phoneId=0 status=IDLE
+11-18 16:47:03.707 D/ProxyController(  889): Constructor - Exit
+11-18 16:47:03.730 D/TelephonyRegistry(  469): listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+11-18 16:47:03.730 D/TelephonyNetworkFactory[0](  889): Registering NetworkFactory
+11-18 16:47:03.750 W/CarrierConfigManager(  663): Error getting config for subId 1 ICarrierConfigLoader is null
+11-18 16:47:03.768 D/TelephonyRegistry(  469): listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+11-18 16:47:03.769 D/CallManager(  889): registerForMmiComplete
+11-18 16:47:03.770 D/NewNitzStateMachineImpl(  889): handleAirplaneModeChanged(false): mLatestNitzSignal was already null. Nothing to do.
+11-18 16:47:03.784 D/TelephonyRegistry(  469): listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+11-18 16:47:03.790 D/TelephonyRegistry(  469): listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+11-18 16:47:03.792 D/UiccController(  889): handleMessage: Received RADIO_UNAVAILABLE for phoneId 0
+11-18 16:47:03.793 D/UiccController(  889): EVENT_RADIO_UNAVAILABLE, dispose card
+11-18 16:47:03.838 D/PhoneInterfaceManager(  889): getServiceStateForSubscriber returning null for inactive subId=-1
+11-18 16:47:03.998 D/RILJ    (  889): [0006]> GET_CURRENT_CALLS [PHONE0]
+11-18 16:47:03.999 D/RLOG-RIL(  361): onRequest(9): GET_CURRENT_CALLS
+11-18 16:47:03.999 D/Phone   (  889): config LCE service failed: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE
+11-18 16:47:03.999 D/GsmSMSDispatcher(  889): GsmSMSDispatcher: subId = -1 slotId = 0
+11-18 16:47:03.999 D/GsmCdmaPhone(  889): [0] Event EVENT_RADIO_OFF_OR_NOT_AVAILABLE Received
+11-18 16:47:04.000 D/GsmCdmaPhone(  889): [0] EVENT EVENT_RADIO_STATE_CHANGED
+11-18 16:47:04.000 D/GsmCdmaPhone(  889): handleRadioPowerStateChange, state= 2
+11-18 16:47:04.000 D/RILJ    (  889): [0006]< GET_CURRENT_CALLS error 1 [PHONE0]
+11-18 16:47:04.000 D/RilRequest(  889): [0006]< GET_CURRENT_CALLS error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret={}
+11-18 16:47:04.001 D/SST     (  889): [0] received event 42
+11-18 16:47:04.001 D/SST     (  889): [0] EVENT_ICC_CHANGED: SIM absent
+11-18 16:47:04.001 D/SST     (  889): [0] cancelAllNotifications: mPrevSubId=-1
+11-18 16:47:04.004 D/SST     (  889): [0] updateSpnDisplayLegacy+
+11-18 16:47:04.020 D/SST     (  889): [0] updateSpnDisplay: radio is on but out of service, set plmn='没有服务'
+11-18 16:47:04.021 D/SST     (  889): [0] updateSpnDisplay: rawSpn = 
+11-18 16:47:04.024 D/SST     (  889): [0] updateSpnDisplay: updateSpnDisplay: changed sending intent, rule=2, showPlmn='true', plmn='没有服务', showSpn='false', spn='', dataSpn='', subId='-1'
+11-18 16:47:04.024 D/SubscriptionManager(  889): putPhoneIdAndSubIdExtra: no valid subs
+11-18 16:47:04.028 D/SubscriptionController(  889): [setPlmnSpn] No valid subscription to store info
+11-18 16:47:04.028 D/SubscriptionController(  889): notifySubscriptionInfoChanged:
+11-18 16:47:04.028 D/TelephonyRegistry(  469): notifySubscriptionInfoChanged: first invocation mRecords.size=23
+11-18 16:47:04.036 D/SST     (  889): [0] updateSpnDisplayLegacy-
+11-18 16:47:04.039 D/NRM-C-0 (  889): Trying to bind com.android.phone for transport WWAN
+11-18 16:47:04.044 D/SST     (  889): [0] received event 1
+11-18 16:47:04.044 D/SST     (  889): [0] mDeviceShuttingDown=false, mDesiredPowerState=true, getRadioState=2, mPowerOffDelayNeed=true, mAlarmSwitch=false, mRadioDisabledByCarrier=false
+11-18 16:47:04.045 D/SST     (  889): [0] pollState: modemTriggered=true
+11-18 16:47:04.045 D/NewNitzStateMachineImpl(  889): handleNetworkUnavailable(): mLatestNitzSignal was already null. Nothing to do.
+11-18 16:47:04.045 D/SST     (  889): [0] Poll ServiceState done:  oldSS=[{mVoiceRegState=1(OUT_OF_SERVICE), mDataRegState=1(OUT_OF_SERVICE), mChannelNumber=-1, duplexMode()=0, mCellBandwidths=[], mOperatorAlphaLong=null, mOperatorAlphaShort=null, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=0(Unknown), getRilDataRadioTechnology=0(Unknown), mCssIndicator=unsupported, mNetworkId=-1, mSystemId=-1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, mIsEmergencyOnly=false, isUsingCarrierAggregation=false, mLteEarfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=UNKNOWN roamingType=NOT_ROAMING accessNetworkTechnology=UNKNOWN rejectCause=0 emergencyEnabled=false availableServices=[] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=NONE rRplmn=}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=UNKNOWN roamingType=NOT_ROAMING accessNetworkTechnology=UNKNOWN rejectCause=0 emergencyEnabled=false availableServices=[] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=NONE rRplmn=}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=null, mOperatorAlphaShortRaw=null, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false}] newSS=[{mVoiceRegState=1(OUT_OF_SERVICE), mDataRegState=1(OUT_OF_SERVICE), mChannelNumber=-1, duplexMode()=0, mCellBandwidths=[], mOperatorAlphaLong=null, mOperatorAlphaShort=null, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=0(Unknown), getRilDataRadioTechnology=0(Unknown), mCssIndicator=unsupported, mNetworkId=-1, mSystemId=-1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, mIsEmergencyOnly=false, isUsingCarrierAggregation=false, mLteEarfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=UNKNOWN roamingType=NOT_ROAMING accessNetworkTechnology=UNKNOWN rejectCause=0 emergencyEnabled=false availableServices=[] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=NONE rRplmn=}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=UNKNOWN roamingType=NOT_ROAMING accessNetworkTechnology=UNKNOWN rejectCause=0 emergencyEnabled=false availableServices=[] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=NONE rRplmn=}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=null, mOperatorAlphaShortRaw=null, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false}] oldMaxDataCalls=1 mNewMaxDataCalls=1 oldReasonDataDenied=-1 mNewReasonDataDenied=-1
+11-18 16:47:04.047 D/SST     (  889): [0] pollStateDone: hasRegistered = false hasDeregistered = false hasDataAttached = {1=false} hasDataDetached = {1=false} hasDataRegStateChanged = {1=false} hasRilVoiceRadioTechnologyChanged = false hasRilDataRadioTechnologyChanged = {1=false} hasDataTransportPreferenceChanged = false hasChanged = false hasVoiceRoamingOn = false hasVoiceRoamingOff = false hasDataRoamingOn =false hasDataRoamingOff = false hasLocationChanged = false has4gHandoff = false hasMultiApnSupport = false hasLostMultiApnSupport = false hasCssIndicatorChanged = false hasNrFrequencyRangeChanged = false hasNrStateChanged = false hasAirplaneModeOnlChanged = false
+11-18 16:47:04.048 D/SST     (  889): [0] received event 50
+11-18 16:47:04.048 D/SST     (  889): [0] mDeviceShuttingDown=false, mDesiredPowerState=true, getRadioState=2, mPowerOffDelayNeed=true, mAlarmSwitch=false, mRadioDisabledByCarrier=false
+11-18 16:47:04.048 D/SST     (  889): [0] pollState: modemTriggered=true
+11-18 16:47:04.048 D/NewNitzStateMachineImpl(  889): handleNetworkUnavailable(): mLatestNitzSignal was already null. Nothing to do.
+11-18 16:47:04.049 D/SST     (  889): [0] Poll ServiceState done:  oldSS=[{mVoiceRegState=1(OUT_OF_SERVICE), mDataRegState=1(OUT_OF_SERVICE), mChannelNumber=-1, duplexMode()=0, mCellBandwidths=[], mOperatorAlphaLong=null, mOperatorAlphaShort=null, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=0(Unknown), getRilDataRadioTechnology=0(Unknown), mCssIndicator=unsupported, mNetworkId=-1, mSystemId=-1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, mIsEmergencyOnly=false, isUsingCarrierAggregation=false, mLteEarfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=UNKNOWN roamingType=NOT_ROAMING accessNetworkTechnology=UNKNOWN rejectCause=0 emergencyEnabled=false availableServices=[] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=NONE rRplmn=}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=UNKNOWN roamingType=NOT_ROAMING accessNetworkTechnology=UNKNOWN rejectCause=0 emergencyEnabled=false availableServices=[] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=NONE rRplmn=}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=null, mOperatorAlphaShortRaw=null, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false}] newSS=[{mVoiceRegState=1(OUT_OF_SERVICE), mDataRegState=1(OUT_OF_SERVICE), mChannelNumber=-1, duplexMode()=0, mCellBandwidths=[], mOperatorAlphaLong=null, mOperatorAlphaShort=null, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=0(Unknown), getRilDataRadioTechnology=0(Unknown), mCssIndicator=unsupported, mNetworkId=-1, mSystemId=-1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, mIsEmergencyOnly=false, isUsingCarrierAggregation=false, mLteEarfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=UNKNOWN roamingType=NOT_ROAMING accessNetworkTechnology=UNKNOWN rejectCause=0 emergencyEnabled=false availableServices=[] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=NONE rRplmn=}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=UNKNOWN roamingType=NOT_ROAMING accessNetworkTechnology=UNKNOWN rejectCause=0 emergencyEnabled=false availableServices=[] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=NONE rRplmn=}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=null, mOperatorAlphaShortRaw=null, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false}] oldMaxDataCalls=1 mNewMaxDataCalls=1 oldReasonDataDenied=-1 mNewReasonDataDenied=-1
+11-18 16:47:04.049 D/SST     (  889): [0] pollStateDone: hasRegistered = false hasDeregistered = false hasDataAttached = {1=false} hasDataDetached = {1=false} hasDataRegStateChanged = {1=false} hasRilVoiceRadioTechnologyChanged = false hasRilDataRadioTechnologyChanged = {1=false} hasDataTransportPreferenceChanged = false hasChanged = false hasVoiceRoamingOn = false hasVoiceRoamingOff = false hasDataRoamingOn =false hasDataRoamingOff = false hasLocationChanged = false has4gHandoff = false hasMultiApnSupport = false hasLostMultiApnSupport = false hasCssIndicatorChanged = false hasNrFrequencyRangeChanged = false hasNrStateChanged = false hasAirplaneModeOnlChanged = false
+11-18 16:47:04.050 D/SST     (  889): [0] received event 3
+11-18 16:47:04.052 D/SubscriptionController(  889): [getSlotIndex]- subId invalid
+11-18 16:47:04.058 D/SubscriptionController(  889): Valid row not present in db
+11-18 16:47:04.059 D/SubscriptionController(  889): getSubscriptionProperty Query value = null
+11-18 16:47:04.059 I/CSST    (  889): isNrSupported:  carrierConfigEnabled: true, AccessFamilySupported: false, isNrNetworkTypeAllowed: true
+11-18 16:47:04.060 I/CSST    (  889): PrefNetworkNotification: sendMessage() w/values: ,false,-1,false,false
+11-18 16:47:04.060 I/CSST    (  889): canceling notifications: 1000
+11-18 16:47:04.061 D/Phone   (  889): isWifiCallingEnabled =false
+11-18 16:47:04.061 D/CSST    (  889): isPhoneRegisteredForWifiCalling: false
+11-18 16:47:04.061 D/Phone   (  889): isWifiCallingEnabled =false
+11-18 16:47:04.061 I/CSST    (  889): EmergencyNetworkNotification: sendMessage() w/values: ,-1,false,false
+11-18 16:47:04.062 I/CSST    (  889): canceling notifications: 1001
+11-18 16:47:04.067 D/SubscriptionController(  889): Valid row not present in db
+11-18 16:47:04.068 D/SubscriptionController(  889): getSubscriptionProperty Query value = null
+11-18 16:47:04.068 I/CSST    (  889): isNrSupported:  carrierConfigEnabled: true, AccessFamilySupported: false, isNrNetworkTypeAllowed: true
+11-18 16:47:04.068 I/CSST    (  889): PrefNetworkNotification: sendMessage() w/values: ,false,-1,false,false
+11-18 16:47:04.069 I/CSST    (  889): canceling notifications: 1000
+11-18 16:47:04.069 D/Phone   (  889): isWifiCallingEnabled =false
+11-18 16:47:04.070 D/CSST    (  889): isPhoneRegisteredForWifiCalling: false
+11-18 16:47:04.070 D/Phone   (  889): isWifiCallingEnabled =false
+11-18 16:47:04.070 I/CSST    (  889): EmergencyNetworkNotification: sendMessage() w/values: ,-1,false,false
+11-18 16:47:04.071 I/CSST    (  889): canceling notifications: 1001
+11-18 16:47:04.071 D/EmergencyNumberTracker(  889): updateRadioEmergencyNumberListAndNotify(): receiving []
+11-18 16:47:04.075 D/RILJ    (  889): [0007]> RIL_REQUEST_SEND_DEVICE_STATE 1:true [PHONE0]
+11-18 16:47:04.078 D/RILJ    (  889): [0007]< RIL_REQUEST_SEND_DEVICE_STATE error 6 [PHONE0]
+11-18 16:47:04.078 D/RilRequest(  889): [0007]< RIL_REQUEST_SEND_DEVICE_STATE error: com.android.internal.telephony.CommandException: REQUEST_NOT_SUPPORTED ret=
+11-18 16:47:04.078 D/RILJ    (  889): [0008]> RIL_REQUEST_SEND_DEVICE_STATE 2:false [PHONE0]
+11-18 16:47:04.078 D/RILC    (  361): sendDeviceState: calling screen state 1
+11-18 16:47:04.078 D/RLOG-RIL(  361): onRequest(61): SCREEN_STATE
+11-18 16:47:04.079 D/RILJ    (  889): [0008]< RIL_REQUEST_SEND_DEVICE_STATE error 1 [PHONE0]
+11-18 16:47:04.079 D/RilRequest(  889): [0008]< RIL_REQUEST_SEND_DEVICE_STATE error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+11-18 16:47:04.080 D/RILJ    (  889): [0009]> RIL_REQUEST_SEND_DEVICE_STATE 0:false [PHONE0]
+11-18 16:47:04.081 D/RILJ    (  889): [0009]< RIL_REQUEST_SEND_DEVICE_STATE error 6 [PHONE0]
+11-18 16:47:04.081 D/RilRequest(  889): [0009]< RIL_REQUEST_SEND_DEVICE_STATE error: com.android.internal.telephony.CommandException: REQUEST_NOT_SUPPORTED ret=
+11-18 16:47:04.082 D/RILJ    (  889): [0010]> RIL_REQUEST_SET_UNSOLICITED_RESPONSE_FILTER -1 [PHONE0]
+11-18 16:47:04.083 D/RILJ    (  889): [0010]< RIL_REQUEST_SET_UNSOLICITED_RESPONSE_FILTER error 6 [PHONE0]
+11-18 16:47:04.083 E/RILJ    (  889): setSignalStrengthReportingCriteria ignored on IRadio version less than 1.2 [PHONE0]
+11-18 16:47:04.083 E/RILJ    (  889): setSignalStrengthReportingCriteria ignored on IRadio version less than 1.2 [PHONE0]
+11-18 16:47:04.083 D/RilRequest(  889): [0010]< RIL_REQUEST_SET_UNSOLICITED_RESPONSE_FILTER error: com.android.internal.telephony.CommandException: REQUEST_NOT_SUPPORTED ret=
+11-18 16:47:04.083 E/RILJ    (  889): setSignalStrengthReportingCriteria ignored on IRadio version less than 1.2 [PHONE0]
+11-18 16:47:04.083 E/RILJ    (  889): setSignalStrengthReportingCriteria ignored on IRadio version less than 1.2 [PHONE0]
+11-18 16:47:04.089 D/RILJ    (  889): [0011]> RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA [PHONE0]
+11-18 16:47:04.089 E/RILJ    (  889): setLinkCapacityReportingCriteria ignored on IRadio version less than 1.2 [PHONE0]
+11-18 16:47:04.091 D/RILJ    (  889): [0012]> RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA [PHONE0]
+11-18 16:47:04.091 E/RILJ    (  889): setLinkCapacityReportingCriteria ignored on IRadio version less than 1.2 [PHONE0]
+11-18 16:47:04.092 D/RILJ    (  889): [0013]> RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA [PHONE0]
+11-18 16:47:04.092 E/RILJ    (  889): setLinkCapacityReportingCriteria ignored on IRadio version less than 1.2 [PHONE0]
+11-18 16:47:04.094 D/RILJ    (  889): [0014]> RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA [PHONE0]
+11-18 16:47:04.094 E/RILJ    (  889): setLinkCapacityReportingCriteria ignored on IRadio version less than 1.2 [PHONE0]
+11-18 16:47:04.095 D/NetworkTypeController(  889): [0] DefaultState: process EVENT_INITIALIZE
+11-18 16:47:04.098 D/NetworkTypeController(  889): [0] mOverrideTimerRules: {connected={mState=connected, mOverrideType=NR_NSA, mPrimaryTimers={}, mSecondaryTimers={}}, not_restricted_rrc_con={mState=not_restricted_rrc_con, mOverrideType=NR_NSA, mPrimaryTimers={}, mSecondaryTimers={}}, legacy={mState=legacy, mOverrideType=NONE, mPrimaryTimers={}, mSecondaryTimers={}}, not_restricted_rrc_idle={mState=not_restricted_rrc_idle, mOverrideType=NR_NSA, mPrimaryTimers={}, mSecondaryTimers={}}, restricted={mState=restricted, mOverrideType=NONE, mPrimaryTimers={}, mSecondaryTimers={}}, connected_mmwave={mState=connected_mmwave, mOverrideType=NR_NSA, mPrimaryTimers={}, mSecondaryTimers={}}}
+11-18 16:47:04.098 D/NetworkTypeController(  889): [0] DefaultState: process EVENT_UPDATE
+11-18 16:47:04.099 D/NetworkTypeController(  889): [0] Remove all timers
+11-18 16:47:04.099 D/NetworkTypeController(  889): [0] Entering LegacyState
+11-18 16:47:04.099 D/NetworkTypeController(  889): [0] Remove all timers
+11-18 16:47:04.099 D/DisplayInfoController(  889): TelephonyDisplayInfo[0] changed from null to TelephonyDisplayInfo {network=UNKNOWN, override=NONE}
+11-18 16:47:04.114 D/DCT-C-0 (  889): onDataEnabledChanged: enable=true, enabledChangedReason=0
+11-18 16:47:04.114 D/DCT-C-0 (  889): setupDataOnAllConnectableApns: dataEnabled hipri:[state=IDLE,enabled=false] mcx:[state=IDLE,enabled=false] xcap:[state=IDLE,enabled=false] fota:[state=IDLE,enabled=false] ims:[state=IDLE,enabled=false] cbs:[state=IDLE,enabled=false] ia:[state=IDLE,enabled=false] emergency:[state=IDLE,enabled=false] mms:[state=IDLE,enabled=false] supl:[state=IDLE,enabled=false] dun:[state=IDLE,enabled=false] default:[state=IDLE,enabled=false] 
+11-18 16:47:04.114 D/DCT-C-0 (  889): onDataEnabledOverrideRulesChanged
+11-18 16:47:04.116 D/DCT-C-0 (  889): shouldRestrictDataForEcbm: isInEcm=false isInImsEcm=false
+11-18 16:47:04.120 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.124 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.126 D/DCT-C-0 (  889): shouldRestrictDataForEcbm: isInEcm=false isInImsEcm=false
+11-18 16:47:04.130 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.133 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.135 D/DCT-C-0 (  889): shouldRestrictDataForEcbm: isInEcm=false isInImsEcm=false
+11-18 16:47:04.139 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.141 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.143 D/DCT-C-0 (  889): shouldRestrictDataForEcbm: isInEcm=false isInImsEcm=false
+11-18 16:47:04.146 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.149 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.151 D/DCT-C-0 (  889): shouldRestrictDataForEcbm: isInEcm=false isInImsEcm=false
+11-18 16:47:04.153 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.155 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.157 D/DCT-C-0 (  889): shouldRestrictDataForEcbm: isInEcm=false isInImsEcm=false
+11-18 16:47:04.159 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.163 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.165 D/DCT-C-0 (  889): shouldRestrictDataForEcbm: isInEcm=false isInImsEcm=false
+11-18 16:47:04.168 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.171 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.173 D/DCT-C-0 (  889): shouldRestrictDataForEcbm: isInEcm=false isInImsEcm=false
+11-18 16:47:04.176 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.178 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.180 D/DCT-C-0 (  889): shouldRestrictDataForEcbm: isInEcm=false isInImsEcm=false
+11-18 16:47:04.184 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.187 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.189 D/DCT-C-0 (  889): shouldRestrictDataForEcbm: isInEcm=false isInImsEcm=false
+11-18 16:47:04.191 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.193 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.194 D/DCT-C-0 (  889): shouldRestrictDataForEcbm: isInEcm=false isInImsEcm=false
+11-18 16:47:04.198 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.201 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.203 D/DCT-C-0 (  889): shouldRestrictDataForEcbm: isInEcm=false isInImsEcm=false
+11-18 16:47:04.205 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.208 D/SubscriptionController(  889): [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+11-18 16:47:04.208 D/DCT-C-0 (  889): onRadioOffOrNotAvailable: is off and clean up all connections
+11-18 16:47:04.209 D/DCT-C-0 (  889): cleanUpAllConnectionsInternal: detach=false reason=radioTurnedOff
+11-18 16:47:04.210 D/DCT-C-0 (  889): cleanUpConnectionInternal: X detach=false reason=radioTurnedOff apnContext={mApnType=xcap mState=IDLE mWaitingApns={null priority=3} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false} dc=null
+11-18 16:47:04.212 D/DCT-C-0 (  889): cleanUpConnectionInternal: X detach=false reason=radioTurnedOff apnContext={mApnType=mcx mState=IDLE mWaitingApns={null priority=3} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false} dc=null
+11-18 16:47:04.214 D/DCT-C-0 (  889): cleanUpConnectionInternal: X detach=false reason=radioTurnedOff apnContext={mApnType=fota mState=IDLE mWaitingApns={null priority=2} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false} dc=null
+11-18 16:47:04.216 D/DCT-C-0 (  889): cleanUpConnectionInternal: X detach=false reason=radioTurnedOff apnContext={mApnType=supl mState=IDLE mWaitingApns={null priority=2} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false} dc=null
+11-18 16:47:04.217 D/DCT-C-0 (  889): return new LinkProperties
+11-18 16:47:04.219 D/DCT-C-0 (  889): cleanUpConnectionInternal: X detach=false reason=radioTurnedOff apnContext={mApnType=emergency mState=IDLE mWaitingApns={null priority=2} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false} dc=null
+11-18 16:47:04.219 D/TelephonyRegistry(  469): onDataConnectionStateChanged(DISCONNECTED, UNKNOWN) subId=-1, phoneId=0
+11-18 16:47:04.221 D/DCT-C-0 (  889): cleanUpConnectionInternal: X detach=false reason=radioTurnedOff apnContext={mApnType=hipri mState=IDLE mWaitingApns={null priority=3} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false} dc=null
+11-18 16:47:04.222 D/DCT-C-0 (  889): cleanUpConnectionInternal: X detach=false reason=radioTurnedOff apnContext={mApnType=ims mState=IDLE mWaitingApns={null priority=2} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false} dc=null
+11-18 16:47:04.224 D/DCT-C-0 (  889): cleanUpConnectionInternal: X detach=false reason=radioTurnedOff apnContext={mApnType=default mState=IDLE mWaitingApns={null priority=0} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false} dc=null
+11-18 16:47:04.225 D/DCT-C-0 (  889): cleanUpConnectionInternal: X detach=false reason=radioTurnedOff apnContext={mApnType=mms mState=IDLE mWaitingApns={null priority=2} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false} dc=null
+11-18 16:47:04.227 D/DCT-C-0 (  889): cleanUpConnectionInternal: X detach=false reason=radioTurnedOff apnContext={mApnType=cbs mState=IDLE mWaitingApns={null priority=2} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false} dc=null
+11-18 16:47:04.228 D/DCT-C-0 (  889): cleanUpConnectionInternal: X detach=false reason=radioTurnedOff apnContext={mApnType=ia mState=IDLE mWaitingApns={null priority=2} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false} dc=null
+11-18 16:47:04.230 D/DCT-C-0 (  889): cleanUpConnectionInternal: X detach=false reason=radioTurnedOff apnContext={mApnType=dun mState=IDLE mWaitingApns={null priority=2} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false} dc=null
+11-18 16:47:04.232 D/DCT-C-0 (  889): stopNetStatPoll
+11-18 16:47:04.233 D/DCT-C-0 (  889): cleanUpAllConnectionsInternal: mDisconnectPendingCount = 0
+11-18 16:47:04.233 D/DCT-C-0 (  889): onDataConnectionDetached: stop polling and notify detached
+11-18 16:47:04.234 D/DCT-C-0 (  889): stopNetStatPoll
+11-18 16:47:04.239 D/DCT-C-0 (  889): onDataRoamingOff
+11-18 16:47:04.241 D/CarrierResolver(  889): handleMessage: 2
+11-18 16:47:04.242 D/GsmCdmaPhone(  889): [0] onVoiceRegStateOrRatChanged
+11-18 16:47:04.242 D/GsmCdmaPhone(  889): [0] getCsCallRadioTech, current vrs=1, vrat=0
+11-18 16:47:04.242 D/GsmCdmaPhone(  889): [0] getCsCallRadioTech, result calcVrat=0
+11-18 16:47:04.242 D/DCT-C-0 (  889): onDataEnabledChanged: enable=true, enabledChangedReason=0
+11-18 16:47:04.242 D/DCT-C-0 (  889): setupDataOnAllConnectableApns: dataEnabled hipri:[state=IDLE,enabled=false] mcx:[state=IDLE,enabled=false] xcap:[state=IDLE,enabled=false] fota:[state=IDLE,enabled=false] ims:[state=IDLE,enabled=false] cbs:[state=IDLE,enabled=false] ia:[state=IDLE,enabled=false] emergency:[state=IDLE,enabled=false] mms:[state=IDLE,enabled=false] supl:[state=IDLE,enabled=false] dun:[state=IDLE,enabled=false] default:[state=IDLE,enabled=false] 
+11-18 16:47:04.242 D/PhoneSwitcher(  889): No active subscriptions: resetting preferred phone to 0 for emergency
+11-18 16:47:04.243 D/PhoneSwitcher(  889): evaluating due to EVENT_PRECISE_CALL_STATE_CHANGED mPrimaryDataSubId -1->1 phone[0] 0->-1
+11-18 16:47:04.243 D/PhoneSwitcher(  889): activate 0
+11-18 16:47:04.249 D/PhoneSwitcher(  889): notifyPreferredDataSubIdChanged to -1
+11-18 16:47:04.251 D/PhoneSwitcher(  889): logDataSwitchEvent subId -1 state 1 reason 2
+11-18 16:47:04.256 D/TelephonyNetworkFactory[0](  889): got request NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ] with score 0 and providerId -1
+11-18 16:47:04.256 D/TelephonyNetworkFactory[0](  889): got request NetworkRequest [ TRACK_DEFAULT id=9, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1073 AdministratorUids: [] RequestorUid: 1073 RequestorPackageName: com.android.networkstack] ] with score 0 and providerId -1
+11-18 16:47:04.256 D/TelephonyNetworkFactory[0](  889): got request NetworkRequest [ BACKGROUND_REQUEST id=2, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ] with score 0 and providerId -1
+11-18 16:47:04.256 D/TelephonyNetworkFactory[0](  889): got request NetworkRequest [ REQUEST id=11, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1073 RequestorPackageName: com.android.networkstack] ] with score 0 and providerId -1
+11-18 16:47:04.257 D/TelephonyNetworkFactory[0](  889): got request NetworkRequest [ TRACK_DEFAULT id=8, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ] with score 0 and providerId -1
+11-18 16:47:04.259 D/DebugService(  889): DebugService DebugService:
+11-18 16:47:04.266 D/TelephonyNetworkFactory[0](  889): got request NetworkRequest [ TRACK_DEFAULT id=14, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.android.systemui] ] with score 0 and providerId 0
+11-18 16:47:04.267 D/TelephonyNetworkFactory[0](  889): got request NetworkRequest [ TRACK_DEFAULT id=15, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.android.systemui] ] with score 0 and providerId 0
+11-18 16:47:04.267 D/GsmSMSDispatcher(  889): GsmSMSDispatcher: subId = -1 slotId = 0
+11-18 16:47:04.268 D/SST     (  889): [0] received event 42
+11-18 16:47:04.268 D/SST     (  889): [0] EVENT_ICC_CHANGED: SIM absent
+11-18 16:47:04.268 D/SST     (  889): [0] cancelAllNotifications: mPrevSubId=-1
+11-18 16:47:04.273 D/SST     (  889): [0] updateSpnDisplayLegacy+
+11-18 16:47:04.277 D/SST     (  889): [0] updateSpnDisplay: radio is on but out of service, set plmn='没有服务'
+11-18 16:47:04.278 D/SST     (  889): [0] updateSpnDisplay: rawSpn = 
+11-18 16:47:04.279 D/SST     (  889): [0] updateSpnDisplayLegacy-
+11-18 16:47:04.279 D/CarrierResolver(  889): handleMessage: 2
+11-18 16:47:04.279 D/GsmCdmaCallTracker(  889): Event EVENT_POLL_CALLS_RESULT Received
+11-18 16:47:04.279 D/GsmCdmaCallTracker(  889): [0] update phone state, old=IDLE new=IDLE
+11-18 16:47:04.279 D/SST     (  889): [0] SubscriptionListener.onSubscriptionInfoChanged
+11-18 16:47:04.285 D/Phone   (  889): isImsRegistered =false
+11-18 16:47:04.317 D/NetworkService(  889): network service created
+11-18 16:47:04.319 D/NetworkTypeController(  889): [0] LegacyState: process EVENT_DATA_RAT_CHANGED
+11-18 16:47:04.319 D/NetworkTypeController(  889): [0] Remove all timers
+11-18 16:47:04.319 D/NetworkTypeController(  889): [0] Remove all timers
+11-18 16:47:04.320 D/DCT-C-0 (  889): reevaluateUnmeteredConnections
+11-18 16:47:04.322 D/DataService(  889): Data service created
+11-18 16:47:04.324 D/TelephonyNetworkFactory[0](  889): got request NetworkRequest [ TRACK_DEFAULT id=16, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1001 AdministratorUids: [] RequestorUid: 1001 RequestorPackageName: com.android.phone] ] with score 0 and providerId 0
+11-18 16:47:04.326 D/DcRequest(  889): Cellular request confirmed: NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+11-18 16:47:04.327 D/PhoneSwitcher(  889): evaluating due to netRequest
+11-18 16:47:04.327 D/PhoneSwitcher(  889): notifyPreferredDataSubIdChanged to -1
+11-18 16:47:04.329 D/PhoneSwitcher(  889): Added DcRequest, size: 1
+11-18 16:47:04.331 D/DcRequest(  889): Cellular request confirmed: NetworkRequest [ TRACK_DEFAULT id=9, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1073 AdministratorUids: [] RequestorUid: 1073 RequestorPackageName: com.android.networkstack] ]
+11-18 16:47:04.331 D/PhoneSwitcher(  889): evaluating due to netRequest
+11-18 16:47:04.332 D/PhoneSwitcher(  889): notifyPreferredDataSubIdChanged to -1
+11-18 16:47:04.335 D/PhoneSwitcher(  889): Added DcRequest, size: 2
+11-18 16:47:04.336 D/DcRequest(  889): Cellular request confirmed: NetworkRequest [ BACKGROUND_REQUEST id=2, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+11-18 16:47:04.337 D/PhoneSwitcher(  889): evaluating due to netRequest
+11-18 16:47:04.337 D/PhoneSwitcher(  889): notifyPreferredDataSubIdChanged to -1
+11-18 16:47:04.339 D/PhoneSwitcher(  889): Added DcRequest, size: 3
+11-18 16:47:04.345 D/DcRequest(  889): Cellular request confirmed: NetworkRequest [ REQUEST id=11, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1073 RequestorPackageName: com.android.networkstack] ]
+11-18 16:47:04.345 D/PhoneSwitcher(  889): evaluating due to netRequest
+11-18 16:47:04.346 D/PhoneSwitcher(  889): notifyPreferredDataSubIdChanged to -1
+11-18 16:47:04.347 D/PhoneSwitcher(  889): Added DcRequest, size: 4
+11-18 16:47:04.349 D/DcRequest(  889): Cellular request confirmed: NetworkRequest [ TRACK_DEFAULT id=8, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+11-18 16:47:04.349 D/PhoneSwitcher(  889): evaluating due to netRequest
+11-18 16:47:04.350 D/PhoneSwitcher(  889): notifyPreferredDataSubIdChanged to -1
+11-18 16:47:04.352 D/PhoneSwitcher(  889): Added DcRequest, size: 5
+11-18 16:47:04.353 D/TelephonyNetworkFactory[0](  889): onNeedNetworkFor NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ] shouldApply false
+11-18 16:47:04.353 D/TelephonyNetworkFactory[0](  889): onNeedNetworkFor NetworkRequest [ TRACK_DEFAULT id=9, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1073 AdministratorUids: [] RequestorUid: 1073 RequestorPackageName: com.android.networkstack] ] shouldApply false
+11-18 16:47:04.353 D/TelephonyNetworkFactory[0](  889): onNeedNetworkFor NetworkRequest [ BACKGROUND_REQUEST id=2, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ] shouldApply false
+11-18 16:47:04.354 D/TelephonyNetworkFactory[0](  889): onNeedNetworkFor NetworkRequest [ REQUEST id=11, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1073 RequestorPackageName: com.android.networkstack] ] shouldApply false
+11-18 16:47:04.354 D/TelephonyNetworkFactory[0](  889): onNeedNetworkFor NetworkRequest [ TRACK_DEFAULT id=8, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ] shouldApply false
+11-18 16:47:04.355 D/TelephonyNetworkFactory[0](  889): onNeedNetworkFor NetworkRequest [ TRACK_DEFAULT id=14, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.android.systemui] ] shouldApply false
+11-18 16:47:04.356 D/DcRequest(  889): Cellular request confirmed: NetworkRequest [ TRACK_DEFAULT id=14, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.android.systemui] ]
+11-18 16:47:04.356 D/PhoneSwitcher(  889): evaluating due to netRequest
+11-18 16:47:04.357 D/PhoneSwitcher(  889): notifyPreferredDataSubIdChanged to -1
+11-18 16:47:04.358 D/PhoneSwitcher(  889): Added DcRequest, size: 6
+11-18 16:47:04.359 D/TelephonyNetworkFactory[0](  889): onNeedNetworkFor NetworkRequest [ TRACK_DEFAULT id=15, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.android.systemui] ] shouldApply false
+11-18 16:47:04.360 D/DcRequest(  889): Cellular request confirmed: NetworkRequest [ TRACK_DEFAULT id=15, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.android.systemui] ]
+11-18 16:47:04.361 D/PhoneSwitcher(  889): evaluating due to netRequest
+11-18 16:47:04.362 D/PhoneSwitcher(  889): notifyPreferredDataSubIdChanged to -1
+11-18 16:47:04.363 D/PhoneSwitcher(  889): Added DcRequest, size: 7
+11-18 16:47:04.375 D/NRM-C-0 (  889): service ComponentInfo{com.android.phone/com.android.internal.telephony.CellularNetworkService} for transport WWAN is now connected.
+11-18 16:47:04.376 D/DSM-C-0 (  889): onServiceConnected
+11-18 16:47:04.377 D/CellularDataService(  889): Cellular data service created for slot 0
+11-18 16:47:04.380 D/DcRequest(  889): Cellular request confirmed: NetworkRequest [ TRACK_DEFAULT id=16, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1001 AdministratorUids: [] RequestorUid: 1001 RequestorPackageName: com.android.phone] ]
+11-18 16:47:04.380 D/PhoneSwitcher(  889): evaluating due to netRequest
+11-18 16:47:04.381 D/PhoneSwitcher(  889): notifyPreferredDataSubIdChanged to -1
+11-18 16:47:04.383 D/PhoneSwitcher(  889): Added DcRequest, size: 8
+11-18 16:47:04.384 D/TelephonyNetworkFactory[0](  889): onNeedNetworkFor NetworkRequest [ TRACK_DEFAULT id=16, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1001 AdministratorUids: [] RequestorUid: 1001 RequestorPackageName: com.android.phone] ] shouldApply false
+11-18 16:47:05.112 D/SubscriptionController(  889): [getSlotIndex]- size == 0, return SIM_NOT_INSERTED instead
+11-18 16:47:06.553 D/WAP PUSH(  889): Received broadcast android.intent.action.USER_UNLOCKED
+11-18 16:47:06.554 D/WAP PUSH(  889): Received broadcast android.intent.action.USER_UNLOCKED
+11-18 16:47:06.554 D/SmsBroadcastUndelivered(  889): Received broadcast android.intent.action.USER_UNLOCKED
+11-18 16:47:06.555 D/SmsDispatchersController(  889): Received broadcast android.intent.action.USER_UNLOCKED
+11-18 16:47:06.607 D/SmsBroadcastUndelivered(  889): scanning raw table for undelivered messages
+11-18 16:47:06.858 D/SmsBroadcastUndelivered(  889): finished scanning raw table in 251 ms
+11-18 16:47:06.888 D/SubscriptionController(  889): [getSlotIndex]- subId invalid
+11-18 16:47:06.899 D/SubscriptionController(  889): [getSlotIndex]- subId invalid
+11-18 16:47:06.916 D/SubscriptionController(  889): [getSlotIndex]- subId invalid
+11-18 16:47:07.491 D/RLOG-RIL(  361): AT< ATE0
+11-18 16:47:07.492 D/SubscriptionController(  889): [getSlotIndex]- subId invalid
+11-18 16:47:07.534 D/SubscriptionController(  889): [getSlotIndex]- subId invalid
+11-18 16:47:08.740 D/RLOG-RIL(  361): AT< +SIND: 12
+11-18 16:47:08.742 D/RLOG-RIL(  361): AT< +ECIND: 2,0
+11-18 16:47:08.897 D/RLOG-RIL(  361): AT< +SPUSATPROCMDIND:D00C810301050082028182990103
+11-18 16:47:08.967 D/RLOG-RIL(  361): AT< +SPUSATPROCMDIND:D019810301250082028182850B80005500530049004D53618F0100
+11-18 16:47:09.257 D/TelephonyNetworkFactory[0](  889): onReleaseNetworkFor NetworkRequest [ TRACK_DEFAULT id=16, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1001 AdministratorUids: [] RequestorUid: 1001 RequestorPackageName: com.android.phone] ] applied false
+11-18 16:47:09.258 D/DcRequest(  889): Cellular request confirmed: NetworkRequest [ TRACK_DEFAULT id=16, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1001 AdministratorUids: [] RequestorUid: 1001 RequestorPackageName: com.android.phone] ]
+11-18 16:47:09.259 D/PhoneSwitcher(  889): evaluating due to netReleased
+11-18 16:47:09.259 D/PhoneSwitcher(  889): notifyPreferredDataSubIdChanged to -1
+11-18 16:47:09.262 D/PhoneSwitcher(  889): Removed DcRequest, size: 7
+11-18 16:47:09.336 D/RLOG-RIL(  361): AT< +CGREG: 2
+11-18 16:47:09.346 D/RLOG-RIL(  361): AT< +CREG: 2
+11-18 16:47:09.355 D/RLOG-RIL(  361): AT< +CEREG: 2
+11-18 16:47:09.363 D/RLOG-RIL(  361): AT< +C5GREG: 4
+11-18 16:47:09.375 D/RLOG-RIL(  361): AT< +SPUSATENDSESSIONIND
+11-18 16:47:09.604 D/SubscriptionController(  889): [getSlotIndex]- subId invalid
+11-18 16:47:09.605 D/SubscriptionController(  889): [getSlotIndex]- subId invalid
+11-18 16:47:12.483 D/RLOG-RIL(  361): AT> ATV1
+11-18 16:47:12.487 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:12.487 D/RLOG-RIL(  361): AT> ATE0
+11-18 16:47:12.489 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:12.490 D/RLOG-RIL(  361): AT> ATV1
+11-18 16:47:12.492 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.120 D/RLOG-RIL(  361): AT< +SPUSATPROCMDIND:D00C810301050082028182990103
+11-18 16:47:13.492 I/RLOG-RIL(  361): Android version:11
+11-18 16:47:13.492 D/RLOG-RIL(  361): AT< +SPUSATPROCMDIND:D019810301250082028182850B80005500530049004D53618F0100
+11-18 16:47:13.492 D/RLOG-RIL(  361): AT< +SPUSATENDSESSIONIND
+11-18 16:47:13.492 D/RLOG-RIL(  361): AT> AT^CURC=0
+11-18 16:47:13.492 D/RLOG-RIL(  361): AT< +CSQ: 0,99
+11-18 16:47:13.492 D/RLOG-RIL(  361): AT< +CESQ: 99,99,255,255,255,255,60,56,48
+11-18 16:47:13.496 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.496 D/RLOG-RIL(  361): AT> ATS0=0
+11-18 16:47:13.499 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.499 D/RLOG-RIL(  361): AT> AT+CMEE=1
+11-18 16:47:13.502 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.502 D/RLOG-RIL(  361): AT> AT+LCTSW
+11-18 16:47:13.523 D/RLOG-RIL(  361): AT< SoftwareVersion: 224705B01R8200C-M2
+11-18 16:47:13.524 D/RLOG-RIL(  361): AT< InnerVersion: W22.47.4_P2
+11-18 16:47:13.524 D/RLOG-RIL(  361): AT< AP: 8SG0001_0.04_L230301
+11-18 16:47:13.524 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.526 D/RLOG-RIL(  361): Modem type is 10,err=1
+11-18 16:47:13.526 I/RLOG-RIL(  361): initializeCallback g_dial_mode:5,g_netwrok_interface:usb0
+11-18 16:47:13.526 D/RILC    (  361): radioStateChangedInd: radioState 0
+11-18 16:47:13.527 I/RLOG-RIL(  361): external_property_at_cmd begin
+11-18 16:47:13.527 I/RLOG-RIL(  361): external_property_at_cmd end
+11-18 16:47:13.527 D/RILJ    (  889): [UNSL]< UNSOL_RESPONSE_RADIO_STATE_CHANGED radioStateChanged: 0 [PHONE0]
+11-18 16:47:13.527 D/GsmCdmaPhone(  889): [0] EVENT EVENT_RADIO_STATE_CHANGED
+11-18 16:47:13.528 D/GsmCdmaPhone(  889): handleRadioPowerStateChange, state= 0
+11-18 16:47:13.529 D/SST     (  889): [0] received event 1
+11-18 16:47:13.529 D/SST     (  889): [0] mDeviceShuttingDown=false, mDesiredPowerState=true, getRadioState=0, mPowerOffDelayNeed=true, mAlarmSwitch=false, mRadioDisabledByCarrier=false
+11-18 16:47:13.531 D/RILJ    (  889): [0015]> RADIO_POWER on = true forEmergencyCall= false preferredForEmergencyCall=false [PHONE0]
+11-18 16:47:13.532 D/RILC    (  361): setRadioPower: serial 15 on 1
+11-18 16:47:13.532 D/SST     (  889): [0] pollState: modemTriggered=true
+11-18 16:47:13.532 D/RLOG-RIL(  361): onRequest(23): RADIO_POWER
+11-18 16:47:13.532 I/RLOG-RIL(  361): onOff=1
+11-18 16:47:13.532 D/RLOG-RIL(  361): AT> AT+CFUN=1
+11-18 16:47:13.532 D/NewNitzStateMachineImpl(  889): handleNetworkUnavailable(): mLatestNitzSignal was already null. Nothing to do.
+11-18 16:47:13.534 D/RILJ    (  889): [0016]> OPERATOR [PHONE0]
+11-18 16:47:13.535 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.536 D/RILJ    (  889): [0017]> QUERY_NETWORK_SELECTION_MODE [PHONE0]
+11-18 16:47:13.537 D/UiccController(  889): handleMessage: Received RADIO_AVAILABLE for phoneId 0
+11-18 16:47:13.538 D/UiccController(  889): Received EVENT_RADIO_AVAILABLE/EVENT_RADIO_ON, calling getIccCardStatus
+11-18 16:47:13.539 D/RILJ    (  889): [0018]> DATA_REGISTRATION_STATE [PHONE0]
+11-18 16:47:13.539 D/RILJ    (  889): getDataRegistrationState: overrideHalVersion=null [PHONE0]
+11-18 16:47:13.540 D/RILJ    (  889): [0019]> GET_SIM_STATUS [PHONE0]
+11-18 16:47:13.541 D/UiccController(  889): Received EVENT_RADIO_AVAILABLE/EVENT_RADIO_ON for phoneId 0, calling getIccSlotsStatus
+11-18 16:47:13.541 D/RILJ    (  889): [0020]> VOICE_REGISTRATION_STATE [PHONE0]
+11-18 16:47:13.541 D/RILJ    (  889): getVoiceRegistrationState: overrideHalVersion=null [PHONE0]
+11-18 16:47:13.545 D/RadioConfig(  889): [0021]> GET_SLOT_STATUS
+11-18 16:47:13.546 E/RadioConfig(  889): processResponse: Unexpected response! serial: 0 error: 0
+11-18 16:47:13.547 E/RadioConfigResponse(  889): getSimSlotsStatusResponse: Error {.type = SOLICITED, .serial = 0, .error = NONE}
+11-18 16:47:13.547 D/RILJ    (  889): [0022]> BASEBAND_VERSION [PHONE0]
+11-18 16:47:13.548 D/RILJ    (  889): [0023]> RIL_REQUEST_DEVICE_IDENTITY [PHONE0]
+11-18 16:47:13.550 D/RILJ    (  889): [0024]> RIL_REQUEST_GET_RADIO_CAPABILITY [PHONE0]
+11-18 16:47:13.552 D/RILJ    (  889): [0025]> RIL_REQUEST_START_LCE reportIntervalMs = 200 pullMode = true [PHONE0]
+11-18 16:47:13.554 D/RILJ    (  889): [0026]> RIL_REQUEST_SEND_DEVICE_STATE 1:true [PHONE0]
+11-18 16:47:13.556 D/RILJ    (  889): [0027]> RIL_REQUEST_SEND_DEVICE_STATE 2:false [PHONE0]
+11-18 16:47:13.558 D/RILJ    (  889): [0028]> RIL_REQUEST_SEND_DEVICE_STATE 0:false [PHONE0]
+11-18 16:47:13.560 D/RILJ    (  889): [0029]> RIL_REQUEST_SET_UNSOLICITED_RESPONSE_FILTER -1 [PHONE0]
+11-18 16:47:13.561 E/RILJ    (  889): setSignalStrengthReportingCriteria ignored on IRadio version less than 1.2 [PHONE0]
+11-18 16:47:13.561 I/chatty  (  889): uid=1001(radio) com.android.phone identical 2 lines
+11-18 16:47:13.561 E/RILJ    (  889): setSignalStrengthReportingCriteria ignored on IRadio version less than 1.2 [PHONE0]
+11-18 16:47:13.563 D/RILJ    (  889): [0030]> RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA [PHONE0]
+11-18 16:47:13.563 E/RILJ    (  889): setLinkCapacityReportingCriteria ignored on IRadio version less than 1.2 [PHONE0]
+11-18 16:47:13.565 D/RILJ    (  889): [0031]> RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA [PHONE0]
+11-18 16:47:13.565 E/RILJ    (  889): setLinkCapacityReportingCriteria ignored on IRadio version less than 1.2 [PHONE0]
+11-18 16:47:13.566 D/RILJ    (  889): [0032]> RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA [PHONE0]
+11-18 16:47:13.566 E/RILJ    (  889): setLinkCapacityReportingCriteria ignored on IRadio version less than 1.2 [PHONE0]
+11-18 16:47:13.568 D/RILJ    (  889): [0033]> RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA [PHONE0]
+11-18 16:47:13.568 E/RILJ    (  889): setLinkCapacityReportingCriteria ignored on IRadio version less than 1.2 [PHONE0]
+11-18 16:47:13.568 D/DCT-C-0 (  889): onRadioAvailable
+11-18 16:47:13.568 D/PhoneCfgMgr(  889): Received EVENT_RADIO_AVAILABLE/EVENT_RADIO_ON
+11-18 16:47:13.569 D/PhoneCfgMgr(  889): getStaticPhoneCapability: sending the request for getting PhoneCapability
+11-18 16:47:13.569 D/PhoneCfgMgr(  889): getStaticPhoneCapability: mStaticCapability maxActiveVoiceCalls=1 maxActiveData=1 max5G=0logicalModemList:[modemId=0 rat=0 isVoiceSupported:true isDataSupported:true]
+11-18 16:47:13.570 D/GsmCdmaPhone(  889): [0] Received exception on event55 : com.android.internal.telephony.CommandException: REQUEST_NOT_SUPPORTED
+11-18 16:47:13.570 D/PhoneCfgMgr(  889): 102 failure. Not updating modem status.com.android.internal.telephony.CommandException: REQUEST_NOT_SUPPORTED
+11-18 16:47:13.570 D/PhoneCfgMgr(  889): 103 failure. Not getting phone capability.com.android.internal.telephony.CommandException: REQUEST_NOT_SUPPORTED
+11-18 16:47:13.736 D/RILC    (  361): radioStateChangedInd: radioState 1
+11-18 16:47:13.736 D/RILJ    (  889): [UNSL]< UNSOL_RESPONSE_RADIO_STATE_CHANGED radioStateChanged: 2 [PHONE0]
+11-18 16:47:13.737 D/GsmCdmaPhone(  889): [0] EVENT EVENT_RADIO_STATE_CHANGED
+11-18 16:47:13.737 D/GsmCdmaPhone(  889): handleRadioPowerStateChange, state= 2
+11-18 16:47:13.738 D/SST     (  889): [0] received event 1
+11-18 16:47:13.738 D/SST     (  889): [0] mDeviceShuttingDown=false, mDesiredPowerState=true, getRadioState=2, mPowerOffDelayNeed=true, mAlarmSwitch=false, mRadioDisabledByCarrier=false
+11-18 16:47:13.738 D/SST     (  889): [0] pollState: modemTriggered=true
+11-18 16:47:13.738 D/NewNitzStateMachineImpl(  889): handleNetworkUnavailable(): mLatestNitzSignal was already null. Nothing to do.
+11-18 16:47:13.739 D/SST     (  889): [0] Poll ServiceState done:  oldSS=[{mVoiceRegState=1(OUT_OF_SERVICE), mDataRegState=1(OUT_OF_SERVICE), mChannelNumber=-1, duplexMode()=0, mCellBandwidths=[], mOperatorAlphaLong=null, mOperatorAlphaShort=null, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=0(Unknown), getRilDataRadioTechnology=0(Unknown), mCssIndicator=unsupported, mNetworkId=-1, mSystemId=-1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, mIsEmergencyOnly=false, isUsingCarrierAggregation=false, mLteEarfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=UNKNOWN roamingType=NOT_ROAMING accessNetworkTechnology=UNKNOWN rejectCause=0 emergencyEnabled=false availableServices=[] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=NONE rRplmn=}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=UNKNOWN roamingType=NOT_ROAMING accessNetworkTechnology=UNKNOWN rejectCause=0 emergencyEnabled=false availableServices=[] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=NONE rRplmn=}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=null, mOperatorAlphaShortRaw=null, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false}] newSS=[{mVoiceRegState=1(OUT_OF_SERVICE), mDataRegState=1(OUT_OF_SERVICE), mChannelNumber=-1, duplexMode()=0, mCellBandwidths=[], mOperatorAlphaLong=null, mOperatorAlphaShort=null, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=0(Unknown), getRilDataRadioTechnology=0(Unknown), mCssIndicator=unsupported, mNetworkId=-1, mSystemId=-1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, mIsEmergencyOnly=false, isUsingCarrierAggregation=false, mLteEarfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=UNKNOWN roamingType=NOT_ROAMING accessNetworkTechnology=UNKNOWN rejectCause=0 emergencyEnabled=false availableServices=[] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=NONE rRplmn=}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=UNKNOWN roamingType=NOT_ROAMING accessNetworkTechnology=UNKNOWN rejectCause=0 emergencyEnabled=false availableServices=[] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=NONE rRplmn=}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=null, mOperatorAlphaShortRaw=null, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false}] oldMaxDataCalls=1 mNewMaxDataCalls=1 oldReasonDataDenied=-1 mNewReasonDataDenied=-1
+11-18 16:47:13.739 D/SST     (  889): [0] pollStateDone: hasRegistered = false hasDeregistered = false hasDataAttached = {1=false} hasDataDetached = {1=false} hasDataRegStateChanged = {1=false} hasRilVoiceRadioTechnologyChanged = false hasRilDataRadioTechnologyChanged = {1=false} hasDataTransportPreferenceChanged = false hasChanged = false hasVoiceRoamingOn = false hasVoiceRoamingOff = false hasDataRoamingOn =false hasDataRoamingOff = false hasLocationChanged = false has4gHandoff = false hasMultiApnSupport = false hasLostMultiApnSupport = false hasCssIndicatorChanged = false hasNrFrequencyRangeChanged = false hasNrStateChanged = false hasAirplaneModeOnlChanged = false
+11-18 16:47:13.740 D/UiccController(  889): handleMessage: Received RADIO_UNAVAILABLE for phoneId 0
+11-18 16:47:13.740 D/UiccController(  889): EVENT_RADIO_UNAVAILABLE, dispose card
+11-18 16:47:13.742 D/RILJ    (  889): [0034]> GET_CURRENT_CALLS [PHONE0]
+11-18 16:47:13.743 D/GsmSMSDispatcher(  889): GsmSMSDispatcher: subId = -1 slotId = 0
+11-18 16:47:13.743 D/SST     (  889): [0] received event 42
+11-18 16:47:13.743 D/SST     (  889): [0] EVENT_ICC_CHANGED: SIM absent
+11-18 16:47:13.743 D/SST     (  889): [0] cancelAllNotifications: mPrevSubId=-1
+11-18 16:47:13.744 D/SST     (  889): [0] updateSpnDisplayLegacy+
+11-18 16:47:13.747 D/SST     (  889): [0] updateSpnDisplay: radio is on but out of service, set plmn='没有服务'
+11-18 16:47:13.747 D/SST     (  889): [0] updateSpnDisplay: rawSpn = 
+11-18 16:47:13.748 D/SST     (  889): [0] updateSpnDisplayLegacy-
+11-18 16:47:13.748 D/CarrierResolver(  889): handleMessage: 2
+11-18 16:47:13.936 I/RLOG-RIL(  361): getSIMStatus retry_cpin=49
+11-18 16:47:13.936 D/RLOG-RIL(  361): AT> AT+CPIN?
+11-18 16:47:13.940 D/RLOG-RIL(  361): AT< +CPIN: READY
+11-18 16:47:13.940 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.941 D/RILC    (  361): radioStateChangedInd: radioState 10
+11-18 16:47:13.941 D/RLOG-RIL(  361): AT> AT+CIMI
+11-18 16:47:13.942 D/RILJ    (  889): [UNSL]< UNSOL_RESPONSE_RADIO_STATE_CHANGED radioStateChanged: 1 [PHONE0]
+11-18 16:47:13.942 D/GsmCdmaPhone(  889): [0] EVENT EVENT_RADIO_STATE_CHANGED
+11-18 16:47:13.942 D/GsmCdmaPhone(  889): handleRadioPowerStateChange, state= 1
+11-18 16:47:13.942 D/RILJ    (  889): [UNSL]< UNSOL_RESPONSE_SIM_STATUS_CHANGED [PHONE0]
+11-18 16:47:13.943 D/RLOG-RIL(  361): AT< 460097186816787
+11-18 16:47:13.943 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.943 D/SST     (  889): [0] received event 1
+11-18 16:47:13.943 D/RLOG-RIL(  361): g_imsi=460097186816787
+11-18 16:47:13.943 D/SST     (  889): [0] mDeviceShuttingDown=false, mDesiredPowerState=true, getRadioState=1, mPowerOffDelayNeed=true, mAlarmSwitch=false, mRadioDisabledByCarrier=false
+11-18 16:47:13.944 D/RLOG-RIL(  361): AT> AT+LSHYMODEIND=1
+11-18 16:47:13.944 D/SST     (  889): [0] pollState: modemTriggered=true
+11-18 16:47:13.944 D/RILJ    (  889): [UNSL]< UNSOL_DATA_CALL_LIST_CHANGED [] [PHONE0]
+11-18 16:47:13.945 D/Dcc-C-0 (  889): onDataStateChanged: dcsList=[] dcListActiveByCid={}
+11-18 16:47:13.945 D/RLOG-RIL(  361): AT< +CME ERROR: 4
+11-18 16:47:13.945 D/Dcc-C-0 (  889): onDataStateChanged: dcsToRetry=[]
+11-18 16:47:13.946 D/Dcc-C-0 (  889): onDataStateChanged: Data Activity updated to NONE. isAnyDataCallActive = false isAnyDataCallDormant = false
+11-18 16:47:13.946 D/Dcc-C-0 (  889): onDataStateChanged: dcsToRetry=[] apnsToCleanup=[]
+11-18 16:47:13.946 D/RILJ    (  889): [0035]> OPERATOR [PHONE0]
+11-18 16:47:13.948 D/RLOG-RIL(  361): AT> AT+CREG=2
+11-18 16:47:13.948 D/RILJ    (  889): [0036]> QUERY_NETWORK_SELECTION_MODE [PHONE0]
+11-18 16:47:13.948 D/UiccController(  889): handleMessage: Received RADIO_AVAILABLE for phoneId 0
+11-18 16:47:13.949 D/UiccController(  889): Received EVENT_RADIO_AVAILABLE/EVENT_RADIO_ON, calling getIccCardStatus
+11-18 16:47:13.950 D/RILJ    (  889): [0037]> DATA_REGISTRATION_STATE [PHONE0]
+11-18 16:47:13.950 D/RILJ    (  889): getDataRegistrationState: overrideHalVersion=null [PHONE0]
+11-18 16:47:13.951 D/RILJ    (  889): [0038]> GET_SIM_STATUS [PHONE0]
+11-18 16:47:13.951 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.951 D/RLOG-RIL(  361): AT> AT+CGREG=2
+11-18 16:47:13.952 D/UiccController(  889): Received EVENT_RADIO_AVAILABLE/EVENT_RADIO_ON for phoneId 0, calling getIccSlotsStatus
+11-18 16:47:13.952 D/RILJ    (  889): [0039]> VOICE_REGISTRATION_STATE [PHONE0]
+11-18 16:47:13.952 D/RILJ    (  889): getVoiceRegistrationState: overrideHalVersion=null [PHONE0]
+11-18 16:47:13.952 D/RadioConfig(  889): [0040]> GET_SLOT_STATUS
+11-18 16:47:13.953 E/RadioConfig(  889): processResponse: Unexpected response! serial: 0 error: 0
+11-18 16:47:13.953 E/RadioConfigResponse(  889): getSimSlotsStatusResponse: Error {.type = SOLICITED, .serial = 0, .error = NONE}
+11-18 16:47:13.954 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.954 D/RLOG-RIL(  361): AT> AT+CEREG=2
+11-18 16:47:13.954 D/RILJ    (  889): [0041]> BASEBAND_VERSION [PHONE0]
+11-18 16:47:13.955 D/RILJ    (  889): [0042]> RIL_REQUEST_DEVICE_IDENTITY [PHONE0]
+11-18 16:47:13.956 D/RILJ    (  889): [0043]> RIL_REQUEST_GET_RADIO_CAPABILITY [PHONE0]
+11-18 16:47:13.957 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.957 D/RLOG-RIL(  361): AT> AT+C5GREG=2
+11-18 16:47:13.958 D/RILJ    (  889): [0044]> RIL_REQUEST_START_LCE reportIntervalMs = 200 pullMode = true [PHONE0]
+11-18 16:47:13.959 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.960 D/RLOG-RIL(  361): AT> AT+CTZU=1
+11-18 16:47:13.960 D/RILJ    (  889): [0045]> RIL_REQUEST_SEND_DEVICE_STATE 1:true [PHONE0]
+11-18 16:47:13.962 D/RILJ    (  889): [0046]> RIL_REQUEST_SEND_DEVICE_STATE 2:false [PHONE0]
+11-18 16:47:13.962 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.963 D/RLOG-RIL(  361): AT> AT+CSCS="IRA"
+11-18 16:47:13.963 D/RILJ    (  889): [0047]> RIL_REQUEST_SEND_DEVICE_STATE 0:false [PHONE0]
+11-18 16:47:13.964 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.964 D/RLOG-RIL(  361): AT> AT+CUSD=1
+11-18 16:47:13.965 D/RILJ    (  889): [0048]> RIL_REQUEST_SET_UNSOLICITED_RESPONSE_FILTER -1 [PHONE0]
+11-18 16:47:13.966 E/RILJ    (  889): setSignalStrengthReportingCriteria ignored on IRadio version less than 1.2 [PHONE0]
+11-18 16:47:13.966 I/chatty  (  889): uid=1001(radio) com.android.phone identical 2 lines
+11-18 16:47:13.966 E/RILJ    (  889): setSignalStrengthReportingCriteria ignored on IRadio version less than 1.2 [PHONE0]
+11-18 16:47:13.967 D/RILJ    (  889): [0049]> RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA [PHONE0]
+11-18 16:47:13.967 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.967 E/RILJ    (  889): setLinkCapacityReportingCriteria ignored on IRadio version less than 1.2 [PHONE0]
+11-18 16:47:13.967 D/RLOG-RIL(  361): AT> AT+CGEREP=1,0
+11-18 16:47:13.968 D/RILJ    (  889): [0050]> RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA [PHONE0]
+11-18 16:47:13.968 E/RILJ    (  889): setLinkCapacityReportingCriteria ignored on IRadio version less than 1.2 [PHONE0]
+11-18 16:47:13.969 D/RILJ    (  889): [0051]> RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA [PHONE0]
+11-18 16:47:13.969 E/RILJ    (  889): setLinkCapacityReportingCriteria ignored on IRadio version less than 1.2 [PHONE0]
+11-18 16:47:13.970 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.970 D/RILJ    (  889): [0052]> RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA [PHONE0]
+11-18 16:47:13.970 D/RLOG-RIL(  361): AT> AT+CCID?
+11-18 16:47:13.970 E/RILJ    (  889): setLinkCapacityReportingCriteria ignored on IRadio version less than 1.2 [PHONE0]
+11-18 16:47:13.970 D/DCT-C-0 (  889): onRadioAvailable
+11-18 16:47:13.970 D/PhoneCfgMgr(  889): Received EVENT_RADIO_AVAILABLE/EVENT_RADIO_ON
+11-18 16:47:13.971 D/PhoneCfgMgr(  889): getStaticPhoneCapability: sending the request for getting PhoneCapability
+11-18 16:47:13.971 D/PhoneCfgMgr(  889): getStaticPhoneCapability: mStaticCapability maxActiveVoiceCalls=1 maxActiveData=1 max5G=0logicalModemList:[modemId=0 rat=0 isVoiceSupported:true isDataSupported:true]
+11-18 16:47:13.973 D/RLOG-RIL(  361): AT< +CCID: "89860121842361384407"
+11-18 16:47:13.973 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.973 D/RILJ    (  889): [0053]> GET_CURRENT_CALLS [PHONE0]
+11-18 16:47:13.974 D/RILC    (  361): setRadioPowerResponse: serial 15
+11-18 16:47:13.974 D/RLOG-RIL(  361): onRequest(22): OPERATOR
+11-18 16:47:13.974 D/RLOG-RIL(  361): AT> AT
+11-18 16:47:13.974 D/RLOG-RIL(  361): AT> AT+CMGF=0
+11-18 16:47:13.975 D/RILJ    (  889): [0054]> RIL_REQUEST_IMS_REGISTRATION_STATE [PHONE0]
+11-18 16:47:13.975 D/RILJ    (  889): [0015]< RADIO_POWER  [PHONE0]
+11-18 16:47:13.976 D/GsmCdmaPhone(  889): [0] Event EVENT_RADIO_ON Received
+11-18 16:47:13.977 D/RILJ    (  889): [0055]> RIL_REQUEST_VOICE_RADIO_TECH [PHONE0]
+11-18 16:47:13.977 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.977 D/RLOG-RIL(  361): AT> AT+COPS=3,0;+COPS?;+COPS=3,1;+COPS?;+COPS=3,2;+COPS?
+11-18 16:47:13.979 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.979 D/RLOG-RIL(  361): AT> AT+CSMS=1
+11-18 16:47:13.979 D/RILJ    (  889): [0056]> RIL_REQUEST_CDMA_GET_SUBSCRIPTION_SOURCE [PHONE0]
+11-18 16:47:13.979 D/UiccController(  889): handleMessage: Received ICC_STATUS_CHANGED for phoneId 0
+11-18 16:47:13.980 D/UiccController(  889): Received EVENT_ICC_STATUS_CHANGED, calling getIccCardStatus
+11-18 16:47:13.982 D/RILJ    (  889): [0057]> GET_SIM_STATUS [PHONE0]
+11-18 16:47:13.982 D/NetworkTypeController(  889): [0] LegacyState: process EVENT_PHYSICAL_LINK_STATE_CHANGED
+11-18 16:47:13.982 D/NetworkTypeController(  889): [0] Remove all timers
+11-18 16:47:13.983 D/GsmCdmaPhone(  889): [0] Received exception on event55 : com.android.internal.telephony.CommandException: REQUEST_NOT_SUPPORTED
+11-18 16:47:13.983 D/PhoneCfgMgr(  889): 102 failure. Not updating modem status.com.android.internal.telephony.CommandException: REQUEST_NOT_SUPPORTED
+11-18 16:47:13.983 D/PhoneCfgMgr(  889): 103 failure. Not getting phone capability.com.android.internal.telephony.CommandException: REQUEST_NOT_SUPPORTED
+11-18 16:47:13.984 D/RLOG-RIL(  361): AT< +COPS: 0
+11-18 16:47:13.987 I/chatty  (  361): uid=0(root) /vendor/bin/hw/rild identical 1 line
+11-18 16:47:13.987 D/RLOG-RIL(  361): AT< +COPS: 0
+11-18 16:47:13.987 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.987 E/RLOG-RIL(  361): RequestOperator must not return error when radio is on
+11-18 16:47:13.987 E/RILC    (  361): getOperatorResponse Invalid response: NULL
+11-18 16:47:13.988 D/RLOG-RIL(  361): onRequest(45): QUERY_NETWORK_SELECTION_MODE
+11-18 16:47:13.988 D/RLOG-RIL(  361): AT> AT+COPS?
+11-18 16:47:13.988 D/RILJ    (  889): [0016]< OPERATOR error 2 [PHONE0]
+11-18 16:47:13.989 D/RLOG-RIL(  361): AT< +CSMS: 1,1,1
+11-18 16:47:13.989 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.989 D/RLOG-RIL(  361): AT> AT+CNMI=2,1,0,0,0
+11-18 16:47:13.989 D/RilRequest(  889): [0016]< OPERATOR error: com.android.internal.telephony.CommandException: GENERIC_FAILURE ret={, , }
+11-18 16:47:13.989 D/SST     (  889): [0] received event 7
+11-18 16:47:13.990 D/RLOG-RIL(  361): AT< +COPS: 0
+11-18 16:47:13.990 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.990 E/RLOG-RIL(  361): requestQueryNetworkSelectionMode must never return error when radio is on
+11-18 16:47:13.990 E/RILC    (  361): getNetworkSelectionModeResponse Invalid response: NULL
+11-18 16:47:13.991 D/RLOG-RIL(  361): onRequest(21): DATA_REGISTRATION_STATE
+11-18 16:47:13.991 D/RLOG-RIL(  361): requestRegistrationState
+11-18 16:47:13.991 D/RLOG-RIL(  361): AT> AT^SYSINFO
+11-18 16:47:13.991 D/RILJ    (  889): [0017]< QUERY_NETWORK_SELECTION_MODE error 2 [PHONE0]
+11-18 16:47:13.992 D/RilRequest(  889): [0017]< QUERY_NETWORK_SELECTION_MODE error: com.android.internal.telephony.CommandException: GENERIC_FAILURE ret={0}
+11-18 16:47:13.992 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.992 D/SST     (  889): [0] received event 14
+11-18 16:47:13.992 D/RLOG-RIL(  361): AT> AT+CPMS="ME","ME","ME"
+11-18 16:47:13.992 D/SST     (  889): [0] EVENT_POLL_STATE_NETWORK_SELECTION_MODE
+11-18 16:47:13.993 D/RLOG-RIL(  361): AT< ^SYSINFO: 0,0,0,0,1,0,0
+11-18 16:47:13.993 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.993 D/RLOG-RIL(  361): AT> AT+CEREG?
+11-18 16:47:13.995 D/RLOG-RIL(  361): AT< +CPMS: 0,100,0,100,0,100
+11-18 16:47:13.995 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.995 D/RLOG-RIL(  361): AT> AT+CMGD=0,2
+11-18 16:47:13.997 D/RLOG-RIL(  361): AT< +CEREG: 2,2
+11-18 16:47:13.997 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:13.997 D/RLOG-RIL(  361): AT> AT+CREG?
+11-18 16:47:13.997 D/RILJ    (  889): [UNSL]< UNSOL_RESPONSE_NETWORK_STATE_CHANGED [PHONE0]
+11-18 16:47:13.998 D/NRM-C-0 (  889): onNetworkStateChanged
+11-18 16:47:13.998 D/SST     (  889): [0] received event 2
+11-18 16:47:13.998 D/SST     (  889): [0] pollState: modemTriggered=true
+11-18 16:47:13.998 D/RLOG-RIL(  361): AT< +CME ERROR: 65536014
+11-18 16:47:14.000 D/RLOG-RIL(  361): AT< +CREG: 2,2
+11-18 16:47:14.000 D/RLOG-RIL(  361): AT< OK
+11-18 16:47:14.000 D/RILJ    (  889): [UNSL]< UNSOL_RESPONSE_NETWORK_STATE_CHANGED [PHONE0]
+11-18 16:47:14.000 D/RILJ    (  889): [0058]> OPERATOR [PHONE0]
+11-18 16:47:14.000 D/NRM-C-0 (  889): onNetworkStateChanged
+11-18 16:47:14.002 D/RILJ    (  889): [0059]> DATA_REGISTRATION_STATE [PHONE0]
+11-18 16:47:14.002 D/RILJ    (  889): getDataRegistrationState: overrideHalVersion=null [PHONE0]
+11-18 16:47:14.003 D/RILJ    (  889): [0060]> QUERY_NETWORK_SELECTION_MODE [PHONE0]
+11-18 16:47:14.005 D/RILJ    (  889): [0061]> VOICE_REGISTRATION_STATE [PHONE0]
+11-18 16:47:14.005 D/RILJ    (  889): getVoiceRegistrationState: overrideHalVersion=null [PHONE0]
+11-18 16:47:14.006 D/RILJ    (  889): [0062]> SIGNAL_STRENGTH [PHONE0]
+11-18 16:47:14.006 D/SST     (  889): [0] received event 2
+11-18 16:47:14.006 D/SST     (  889): [0] pollState: modemTriggered=true
+11-18 16:47:14.008 D/RILJ    (  889): [0063]> OPERATOR [PHONE0]
+11-18 16:47:14.010 D/RILJ    (  889): [0064]> QUERY_NETWORK_SELECTION_MODE [PHONE0]
+11-18 16:47:14.011 D/RILJ    (  889): [0065]> DATA_REGISTRATION_STATE [PHONE0]
+11-18 16:47:14.011 D/RILJ    (  889): getDataRegistrationState: overrideHalVersion=null [PHONE0]
+11-18 16:47:14.012 D/RILJ    (  889): [0066]> SIGNAL_STRENGTH [PHONE0]
+11-18 16:47:14.013 D/RILJ    (  889): [0067]> VOICE_REGISTRATION_STATE [PHONE0]
+11-18 16:47:14.014 D/RILJ    (  889): getVoiceRegistrationState: overrideHalVersion=null [PHONE0]
+11-18 16:48:14.014 D/RILJ    (  889): NOTE: mWakeLockCount is 52at time of clearing
+11-18 16:48:14.021 D/RILJ    (  889): WAKE_LOCK_TIMEOUT  mRequestList=52
+11-18 16:48:14.021 D/RILJ    (  889): 0: [11] RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA
+11-18 16:48:14.021 D/RILJ    (  889): 1: [12] RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA
+11-18 16:48:14.021 D/RILJ    (  889): 2: [13] RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA
+11-18 16:48:14.021 D/RILJ    (  889): 3: [14] RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA
+11-18 16:48:14.021 D/RILJ    (  889): 4: [18] DATA_REGISTRATION_STATE
+11-18 16:48:14.021 D/RILJ    (  889): 5: [19] GET_SIM_STATUS
+11-18 16:48:14.022 D/RILJ    (  889): 6: [20] VOICE_REGISTRATION_STATE
+11-18 16:48:14.022 D/RILJ    (  889): 7: [22] BASEBAND_VERSION
+11-18 16:48:14.022 D/RILJ    (  889): 8: [23] RIL_REQUEST_DEVICE_IDENTITY
+11-18 16:48:14.022 D/RILJ    (  889): 9: [24] RIL_REQUEST_GET_RADIO_CAPABILITY
+11-18 16:48:14.022 D/RILJ    (  889): 10: [25] RIL_REQUEST_START_LCE
+11-18 16:48:14.022 D/RILJ    (  889): 11: [26] RIL_REQUEST_SEND_DEVICE_STATE
+11-18 16:48:14.022 D/RILJ    (  889): 12: [27] RIL_REQUEST_SEND_DEVICE_STATE
+11-18 16:48:14.022 D/RILJ    (  889): 13: [28] RIL_REQUEST_SEND_DEVICE_STATE
+11-18 16:48:14.022 D/RILJ    (  889): 14: [29] RIL_REQUEST_SET_UNSOLICITED_RESPONSE_FILTER
+11-18 16:48:14.022 D/RILJ    (  889): 15: [30] RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA
+11-18 16:48:14.022 D/RILJ    (  889): 16: [31] RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA
+11-18 16:48:14.022 D/RILJ    (  889): 17: [32] RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA
+11-18 16:48:14.022 D/RILJ    (  889): 18: [33] RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA
+11-18 16:48:14.022 D/RILJ    (  889): 19: [34] GET_CURRENT_CALLS
+11-18 16:48:14.022 D/RILJ    (  889): 20: [35] OPERATOR
+11-18 16:48:14.022 D/RILJ    (  889): 21: [36] QUERY_NETWORK_SELECTION_MODE
+11-18 16:48:14.022 D/RILJ    (  889): 22: [37] DATA_REGISTRATION_STATE
+11-18 16:48:14.022 D/RILJ    (  889): 23: [38] GET_SIM_STATUS
+11-18 16:48:14.022 D/RILJ    (  889): 24: [39] VOICE_REGISTRATION_STATE
+11-18 16:48:14.022 D/RILJ    (  889): 25: [41] BASEBAND_VERSION
+11-18 16:48:14.023 D/RILJ    (  889): 26: [42] RIL_REQUEST_DEVICE_IDENTITY
+11-18 16:48:14.023 D/RILJ    (  889): 27: [43] RIL_REQUEST_GET_RADIO_CAPABILITY
+11-18 16:48:14.023 D/RILJ    (  889): 28: [44] RIL_REQUEST_START_LCE
+11-18 16:48:14.023 D/RILJ    (  889): 29: [45] RIL_REQUEST_SEND_DEVICE_STATE
+11-18 16:48:14.023 D/RILJ    (  889): 30: [46] RIL_REQUEST_SEND_DEVICE_STATE
+11-18 16:48:14.023 D/RILJ    (  889): 31: [47] RIL_REQUEST_SEND_DEVICE_STATE
+11-18 16:48:14.023 D/RILJ    (  889): 32: [48] RIL_REQUEST_SET_UNSOLICITED_RESPONSE_FILTER
+11-18 16:48:14.023 D/RILJ    (  889): 33: [49] RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA
+11-18 16:48:14.023 D/RILJ    (  889): 34: [50] RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA
+11-18 16:48:14.023 D/RILJ    (  889): 35: [51] RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA
+11-18 16:48:14.023 D/RILJ    (  889): 36: [52] RIL_REQUEST_SET_LINK_CAPACITY_REPORTING_CRITERIA
+11-18 16:48:14.023 D/RILJ    (  889): 37: [53] GET_CURRENT_CALLS
+11-18 16:48:14.023 D/RILJ    (  889): 38: [54] RIL_REQUEST_IMS_REGISTRATION_STATE
+11-18 16:48:14.023 D/RILJ    (  889): 39: [55] RIL_REQUEST_VOICE_RADIO_TECH
+11-18 16:48:14.023 D/RILJ    (  889): 40: [56] RIL_REQUEST_CDMA_GET_SUBSCRIPTION_SOURCE
+11-18 16:48:14.023 D/RILJ    (  889): 41: [57] GET_SIM_STATUS
+11-18 16:48:14.023 D/RILJ    (  889): 42: [58] OPERATOR
+11-18 16:48:14.023 D/RILJ    (  889): 43: [59] DATA_REGISTRATION_STATE
+11-18 16:48:14.023 D/RILJ    (  889): 44: [60] QUERY_NETWORK_SELECTION_MODE
+11-18 16:48:14.023 D/RILJ    (  889): 45: [61] VOICE_REGISTRATION_STATE
+11-18 16:48:14.023 D/RILJ    (  889): 46: [62] SIGNAL_STRENGTH
+11-18 16:48:14.023 D/RILJ    (  889): 47: [63] OPERATOR
+11-18 16:48:14.023 D/RILJ    (  889): 48: [64] QUERY_NETWORK_SELECTION_MODE
+11-18 16:48:14.023 D/RILJ    (  889): 49: [65] DATA_REGISTRATION_STATE
+11-18 16:48:14.023 D/RILJ    (  889): 50: [66] SIGNAL_STRENGTH
+11-18 16:48:14.024 D/RILJ    (  889): 51: [67] VOICE_REGISTRATION_STATE
